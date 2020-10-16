@@ -161,7 +161,6 @@
         Me.IPAd7 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.IpAdName8 = New System.Windows.Forms.Label()
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.IpAdName10 = New System.Windows.Forms.Label()
         Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.IPAd10 = New System.Windows.Forms.TextBox()
@@ -214,6 +213,37 @@
         Me.BarEditItem18 = New DevExpress.XtraBars.BarEditItem()
         Me.BarSubItem1 = New DevExpress.XtraBars.BarSubItem()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.Clearpopup = New DevExpress.XtraBars.PopupControlContainer(Me.components)
+        Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
+        Me.Ip_clear_12 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_11 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_10 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_9 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_8 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_7 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_6 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_5 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_4 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_3 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_2 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Ip_clear_1 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_12 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_11 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_10 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_9 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_8 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_7 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_6 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_5 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_4 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_3 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Name_clear_2 = New DevExpress.XtraEditors.CheckEdit()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Name_clear_1 = New DevExpress.XtraEditors.CheckEdit()
+        Me.SeparatorControl5 = New DevExpress.XtraEditors.SeparatorControl()
+        Me.DropDownButton2 = New DevExpress.XtraEditors.DropDownButton()
         Me.SeparatorControl8 = New DevExpress.XtraEditors.SeparatorControl()
         Me.Stat_PIc12 = New System.Windows.Forms.PictureBox()
         Me.Stat_PIc11 = New System.Windows.Forms.PictureBox()
@@ -294,6 +324,33 @@
         CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SeparatorControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Clearpopup, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Clearpopup.SuspendLayout()
+        CType(Me.Ip_clear_12.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_11.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_10.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_8.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_7.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_6.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ip_clear_1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_12.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_11.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_10.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_9.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_8.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_7.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_6.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_5.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Name_clear_1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SeparatorControl5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SeparatorControl8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Stat_PIc12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Stat_PIc11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -645,7 +702,7 @@
         '
         'Always_was_Top
         '
-        Me.Always_was_Top.Location = New System.Drawing.Point(143, 110)
+        Me.Always_was_Top.Location = New System.Drawing.Point(280, 110)
         Me.Always_was_Top.Name = "Always_was_Top"
         Me.Always_was_Top.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
         Me.Always_was_Top.Properties.Appearance.Options.UseForeColor = True
@@ -659,7 +716,7 @@
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Lime
-        Me.Label8.Location = New System.Drawing.Point(140, 87)
+        Me.Label8.Location = New System.Drawing.Point(277, 87)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 18)
         Me.Label8.TabIndex = 68
@@ -1084,7 +1141,6 @@
         Me.settings.Controls.Add(Me.IPAd7)
         Me.settings.Controls.Add(Me.Label7)
         Me.settings.Controls.Add(Me.IpAdName8)
-        Me.settings.Controls.Add(Me.SimpleButton1)
         Me.settings.Controls.Add(Me.IpAdName10)
         Me.settings.Controls.Add(Me.SimpleButton2)
         Me.settings.Controls.Add(Me.IPAd10)
@@ -1127,10 +1183,10 @@
         Me.settings.Controls.Add(Me.IPAd6)
         Me.settings.Controls.Add(Me.SeparatorControl6)
         Me.settings.Controls.Add(Me.SeparatorControl7)
-        Me.settings.Location = New System.Drawing.Point(76, 152)
+        Me.settings.Location = New System.Drawing.Point(37, 532)
         Me.settings.Manager = Me.BarManager1
         Me.settings.Name = "settings"
-        Me.settings.Size = New System.Drawing.Size(1162, 321)
+        Me.settings.Size = New System.Drawing.Size(1162, 325)
         Me.settings.TabIndex = 73
         Me.settings.Visible = False
         '
@@ -1147,6 +1203,7 @@
         'MswornSelc
         '
         Me.MswornSelc.EditValue = "3 MS (Default)"
+        Me.MswornSelc.Enabled = False
         Me.MswornSelc.Location = New System.Drawing.Point(585, 290)
         Me.MswornSelc.Name = "MswornSelc"
         Me.MswornSelc.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
@@ -1450,17 +1507,6 @@
         Me.IpAdName8.TabIndex = 60
         Me.IpAdName8.Text = "IP Address &8:"
         '
-        'SimpleButton1
-        '
-        Me.SimpleButton1.Appearance.ForeColor = System.Drawing.Color.Lime
-        Me.SimpleButton1.Appearance.Options.UseForeColor = True
-        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
-        Me.SimpleButton1.Location = New System.Drawing.Point(219, 271)
-        Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(123, 39)
-        Me.SimpleButton1.TabIndex = 0
-        Me.SimpleButton1.Text = "Default Name"
-        '
         'IpAdName10
         '
         Me.IpAdName10.AutoSize = True
@@ -1753,7 +1799,7 @@
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 139)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 933)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1376, 0)
         '
@@ -1763,7 +1809,7 @@
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 139)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 933)
         '
         'barDockControlRight
         '
@@ -1771,7 +1817,7 @@
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1376, 0)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 139)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 933)
         '
         'BarEditItem1
         '
@@ -1991,6 +2037,425 @@
         Me.BarButtonItem1.Id = 19
         Me.BarButtonItem1.Name = "BarButtonItem1"
         Me.BarButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+        '
+        'SimpleButton1
+        '
+        Me.SimpleButton1.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.SimpleButton1.Appearance.Options.UseForeColor = True
+        Me.SimpleButton1.ImageOptions.Image = CType(resources.GetObject("SimpleButton1.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton1.Location = New System.Drawing.Point(86, 241)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(123, 34)
+        Me.SimpleButton1.TabIndex = 0
+        Me.SimpleButton1.Text = "Clear All"
+        '
+        'Clearpopup
+        '
+        Me.Clearpopup.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.Clearpopup.Controls.Add(Me.SimpleButton3)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_12)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_11)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_10)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_9)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_8)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_7)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_6)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_5)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_4)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_3)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_2)
+        Me.Clearpopup.Controls.Add(Me.Ip_clear_1)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_12)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_11)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_10)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_9)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_8)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_7)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_6)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_5)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_4)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_3)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_2)
+        Me.Clearpopup.Controls.Add(Me.Label3)
+        Me.Clearpopup.Controls.Add(Me.Label2)
+        Me.Clearpopup.Controls.Add(Me.Name_clear_1)
+        Me.Clearpopup.Controls.Add(Me.SeparatorControl5)
+        Me.Clearpopup.Controls.Add(Me.SimpleButton1)
+        Me.Clearpopup.Location = New System.Drawing.Point(37, 153)
+        Me.Clearpopup.Manager = Me.BarManager1
+        Me.Clearpopup.Name = "Clearpopup"
+        Me.Clearpopup.Size = New System.Drawing.Size(701, 286)
+        Me.Clearpopup.TabIndex = 149
+        Me.Clearpopup.Visible = False
+        '
+        'SimpleButton3
+        '
+        Me.SimpleButton3.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.SimpleButton3.Appearance.Options.UseForeColor = True
+        Me.SimpleButton3.ImageOptions.Image = CType(resources.GetObject("SimpleButton3.ImageOptions.Image"), System.Drawing.Image)
+        Me.SimpleButton3.Location = New System.Drawing.Point(425, 241)
+        Me.SimpleButton3.Name = "SimpleButton3"
+        Me.SimpleButton3.Size = New System.Drawing.Size(123, 34)
+        Me.SimpleButton3.TabIndex = 150
+        Me.SimpleButton3.Text = "Clear All"
+        '
+        'Ip_clear_12
+        '
+        Me.Ip_clear_12.Location = New System.Drawing.Point(530, 200)
+        Me.Ip_clear_12.MenuManager = Me.BarManager1
+        Me.Ip_clear_12.Name = "Ip_clear_12"
+        Me.Ip_clear_12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_12.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_12.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_12.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_12.Properties.Caption = "CheckEdit13"
+        Me.Ip_clear_12.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_12.TabIndex = 99
+        '
+        'Ip_clear_11
+        '
+        Me.Ip_clear_11.Location = New System.Drawing.Point(530, 171)
+        Me.Ip_clear_11.MenuManager = Me.BarManager1
+        Me.Ip_clear_11.Name = "Ip_clear_11"
+        Me.Ip_clear_11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_11.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_11.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_11.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_11.Properties.Caption = "CheckEdit14"
+        Me.Ip_clear_11.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_11.TabIndex = 98
+        '
+        'Ip_clear_10
+        '
+        Me.Ip_clear_10.Location = New System.Drawing.Point(530, 142)
+        Me.Ip_clear_10.MenuManager = Me.BarManager1
+        Me.Ip_clear_10.Name = "Ip_clear_10"
+        Me.Ip_clear_10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_10.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_10.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_10.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_10.Properties.Caption = "CheckEdit15"
+        Me.Ip_clear_10.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_10.TabIndex = 97
+        '
+        'Ip_clear_9
+        '
+        Me.Ip_clear_9.Location = New System.Drawing.Point(530, 113)
+        Me.Ip_clear_9.MenuManager = Me.BarManager1
+        Me.Ip_clear_9.Name = "Ip_clear_9"
+        Me.Ip_clear_9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_9.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_9.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_9.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_9.Properties.Caption = "CheckEdit16"
+        Me.Ip_clear_9.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_9.TabIndex = 96
+        '
+        'Ip_clear_8
+        '
+        Me.Ip_clear_8.Location = New System.Drawing.Point(530, 84)
+        Me.Ip_clear_8.MenuManager = Me.BarManager1
+        Me.Ip_clear_8.Name = "Ip_clear_8"
+        Me.Ip_clear_8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_8.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_8.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_8.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_8.Properties.Caption = "CheckEdit17"
+        Me.Ip_clear_8.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_8.TabIndex = 95
+        '
+        'Ip_clear_7
+        '
+        Me.Ip_clear_7.Location = New System.Drawing.Point(530, 55)
+        Me.Ip_clear_7.MenuManager = Me.BarManager1
+        Me.Ip_clear_7.Name = "Ip_clear_7"
+        Me.Ip_clear_7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_7.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_7.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_7.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_7.Properties.Caption = "CheckEdit18"
+        Me.Ip_clear_7.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_7.TabIndex = 94
+        '
+        'Ip_clear_6
+        '
+        Me.Ip_clear_6.Location = New System.Drawing.Point(347, 200)
+        Me.Ip_clear_6.MenuManager = Me.BarManager1
+        Me.Ip_clear_6.Name = "Ip_clear_6"
+        Me.Ip_clear_6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_6.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_6.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_6.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_6.Properties.Caption = "CheckEdit19"
+        Me.Ip_clear_6.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_6.TabIndex = 93
+        '
+        'Ip_clear_5
+        '
+        Me.Ip_clear_5.Location = New System.Drawing.Point(347, 171)
+        Me.Ip_clear_5.MenuManager = Me.BarManager1
+        Me.Ip_clear_5.Name = "Ip_clear_5"
+        Me.Ip_clear_5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_5.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_5.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_5.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_5.Properties.Caption = "CheckEdit20"
+        Me.Ip_clear_5.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_5.TabIndex = 92
+        '
+        'Ip_clear_4
+        '
+        Me.Ip_clear_4.Location = New System.Drawing.Point(347, 142)
+        Me.Ip_clear_4.MenuManager = Me.BarManager1
+        Me.Ip_clear_4.Name = "Ip_clear_4"
+        Me.Ip_clear_4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_4.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_4.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_4.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_4.Properties.Caption = "CheckEdit21"
+        Me.Ip_clear_4.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_4.TabIndex = 91
+        '
+        'Ip_clear_3
+        '
+        Me.Ip_clear_3.Location = New System.Drawing.Point(347, 113)
+        Me.Ip_clear_3.MenuManager = Me.BarManager1
+        Me.Ip_clear_3.Name = "Ip_clear_3"
+        Me.Ip_clear_3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_3.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_3.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_3.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_3.Properties.Caption = "CheckEdit22"
+        Me.Ip_clear_3.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_3.TabIndex = 90
+        '
+        'Ip_clear_2
+        '
+        Me.Ip_clear_2.Location = New System.Drawing.Point(347, 84)
+        Me.Ip_clear_2.MenuManager = Me.BarManager1
+        Me.Ip_clear_2.Name = "Ip_clear_2"
+        Me.Ip_clear_2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_2.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_2.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_2.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_2.Properties.Caption = "CheckEdit23"
+        Me.Ip_clear_2.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_2.TabIndex = 89
+        '
+        'Ip_clear_1
+        '
+        Me.Ip_clear_1.Location = New System.Drawing.Point(347, 55)
+        Me.Ip_clear_1.MenuManager = Me.BarManager1
+        Me.Ip_clear_1.Name = "Ip_clear_1"
+        Me.Ip_clear_1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Ip_clear_1.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Ip_clear_1.Properties.Appearance.Options.UseFont = True
+        Me.Ip_clear_1.Properties.Appearance.Options.UseForeColor = True
+        Me.Ip_clear_1.Properties.Caption = "CheckEdit24"
+        Me.Ip_clear_1.Size = New System.Drawing.Size(142, 23)
+        Me.Ip_clear_1.TabIndex = 88
+        '
+        'Name_clear_12
+        '
+        Me.Name_clear_12.Location = New System.Drawing.Point(182, 200)
+        Me.Name_clear_12.MenuManager = Me.BarManager1
+        Me.Name_clear_12.Name = "Name_clear_12"
+        Me.Name_clear_12.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_12.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_12.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_12.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_12.Properties.Caption = "CheckEdit12"
+        Me.Name_clear_12.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_12.TabIndex = 87
+        '
+        'Name_clear_11
+        '
+        Me.Name_clear_11.Location = New System.Drawing.Point(182, 171)
+        Me.Name_clear_11.MenuManager = Me.BarManager1
+        Me.Name_clear_11.Name = "Name_clear_11"
+        Me.Name_clear_11.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_11.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_11.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_11.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_11.Properties.Caption = "CheckEdit11"
+        Me.Name_clear_11.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_11.TabIndex = 86
+        '
+        'Name_clear_10
+        '
+        Me.Name_clear_10.Location = New System.Drawing.Point(182, 142)
+        Me.Name_clear_10.MenuManager = Me.BarManager1
+        Me.Name_clear_10.Name = "Name_clear_10"
+        Me.Name_clear_10.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_10.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_10.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_10.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_10.Properties.Caption = "CheckEdit10"
+        Me.Name_clear_10.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_10.TabIndex = 85
+        '
+        'Name_clear_9
+        '
+        Me.Name_clear_9.Location = New System.Drawing.Point(182, 113)
+        Me.Name_clear_9.MenuManager = Me.BarManager1
+        Me.Name_clear_9.Name = "Name_clear_9"
+        Me.Name_clear_9.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_9.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_9.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_9.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_9.Properties.Caption = "CheckEdit9"
+        Me.Name_clear_9.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_9.TabIndex = 84
+        '
+        'Name_clear_8
+        '
+        Me.Name_clear_8.Location = New System.Drawing.Point(182, 84)
+        Me.Name_clear_8.MenuManager = Me.BarManager1
+        Me.Name_clear_8.Name = "Name_clear_8"
+        Me.Name_clear_8.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_8.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_8.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_8.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_8.Properties.Caption = "CheckEdit8"
+        Me.Name_clear_8.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_8.TabIndex = 83
+        '
+        'Name_clear_7
+        '
+        Me.Name_clear_7.Location = New System.Drawing.Point(182, 55)
+        Me.Name_clear_7.MenuManager = Me.BarManager1
+        Me.Name_clear_7.Name = "Name_clear_7"
+        Me.Name_clear_7.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_7.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_7.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_7.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_7.Properties.Caption = "CheckEdit7"
+        Me.Name_clear_7.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_7.TabIndex = 82
+        '
+        'Name_clear_6
+        '
+        Me.Name_clear_6.Location = New System.Drawing.Point(17, 200)
+        Me.Name_clear_6.MenuManager = Me.BarManager1
+        Me.Name_clear_6.Name = "Name_clear_6"
+        Me.Name_clear_6.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_6.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_6.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_6.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_6.Properties.Caption = "CheckEdit6"
+        Me.Name_clear_6.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_6.TabIndex = 81
+        '
+        'Name_clear_5
+        '
+        Me.Name_clear_5.Location = New System.Drawing.Point(17, 171)
+        Me.Name_clear_5.MenuManager = Me.BarManager1
+        Me.Name_clear_5.Name = "Name_clear_5"
+        Me.Name_clear_5.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_5.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_5.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_5.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_5.Properties.Caption = "CheckEdit5"
+        Me.Name_clear_5.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_5.TabIndex = 80
+        '
+        'Name_clear_4
+        '
+        Me.Name_clear_4.Location = New System.Drawing.Point(17, 142)
+        Me.Name_clear_4.MenuManager = Me.BarManager1
+        Me.Name_clear_4.Name = "Name_clear_4"
+        Me.Name_clear_4.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_4.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_4.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_4.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_4.Properties.Caption = "CheckEdit4"
+        Me.Name_clear_4.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_4.TabIndex = 79
+        '
+        'Name_clear_3
+        '
+        Me.Name_clear_3.Location = New System.Drawing.Point(17, 113)
+        Me.Name_clear_3.MenuManager = Me.BarManager1
+        Me.Name_clear_3.Name = "Name_clear_3"
+        Me.Name_clear_3.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_3.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_3.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_3.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_3.Properties.Caption = "CheckEdit3"
+        Me.Name_clear_3.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_3.TabIndex = 78
+        '
+        'Name_clear_2
+        '
+        Me.Name_clear_2.Location = New System.Drawing.Point(17, 84)
+        Me.Name_clear_2.MenuManager = Me.BarManager1
+        Me.Name_clear_2.Name = "Name_clear_2"
+        Me.Name_clear_2.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_2.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_2.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_2.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_2.Properties.Caption = "CheckEdit2"
+        Me.Name_clear_2.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_2.TabIndex = 77
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.Label3.ForeColor = System.Drawing.Color.Lime
+        Me.Label3.Location = New System.Drawing.Point(463, 20)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(59, 18)
+        Me.Label3.TabIndex = 75
+        Me.Label3.Text = "Clear IP"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.Label2.ForeColor = System.Drawing.Color.Lime
+        Me.Label2.Location = New System.Drawing.Point(96, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(152, 18)
+        Me.Label2.TabIndex = 74
+        Me.Label2.Text = "Clear IP Adress Name"
+        '
+        'Name_clear_1
+        '
+        Me.Name_clear_1.Location = New System.Drawing.Point(17, 55)
+        Me.Name_clear_1.MenuManager = Me.BarManager1
+        Me.Name_clear_1.Name = "Name_clear_1"
+        Me.Name_clear_1.Properties.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.Name_clear_1.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.Name_clear_1.Properties.Appearance.Options.UseFont = True
+        Me.Name_clear_1.Properties.Appearance.Options.UseForeColor = True
+        Me.Name_clear_1.Properties.Caption = "CheckEdit1"
+        Me.Name_clear_1.Size = New System.Drawing.Size(142, 23)
+        Me.Name_clear_1.TabIndex = 0
+        '
+        'SeparatorControl5
+        '
+        Me.SeparatorControl5.LineColor = System.Drawing.Color.Black
+        Me.SeparatorControl5.LineOrientation = System.Windows.Forms.Orientation.Vertical
+        Me.SeparatorControl5.Location = New System.Drawing.Point(312, 20)
+        Me.SeparatorControl5.Name = "SeparatorControl5"
+        Me.SeparatorControl5.Size = New System.Drawing.Size(28, 223)
+        Me.SeparatorControl5.TabIndex = 76
+        '
+        'DropDownButton2
+        '
+        Me.DropDownButton2.Appearance.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.DropDownButton2.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.DropDownButton2.Appearance.Options.UseFont = True
+        Me.DropDownButton2.Appearance.Options.UseForeColor = True
+        Me.DropDownButton2.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Hide
+        Me.DropDownButton2.DropDownControl = Me.Clearpopup
+        Me.DropDownButton2.ImageOptions.Image = CType(resources.GetObject("DropDownButton2.ImageOptions.Image"), System.Drawing.Image)
+        Me.DropDownButton2.Location = New System.Drawing.Point(143, 96)
+        Me.DropDownButton2.Name = "DropDownButton2"
+        Me.DropDownButton2.Size = New System.Drawing.Size(126, 34)
+        Me.DropDownButton2.TabIndex = 148
+        Me.DropDownButton2.Text = "Clearing"
         '
         'SeparatorControl8
         '
@@ -2324,7 +2789,10 @@
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 139)
+        Me.ClientSize = New System.Drawing.Size(1376, 933)
+        Me.Controls.Add(Me.DropDownButton2)
+        Me.Controls.Add(Me.Clearpopup)
+        Me.Controls.Add(Me.settings)
         Me.Controls.Add(Me.Lab12_stat)
         Me.Controls.Add(Me.Lab11_stat)
         Me.Controls.Add(Me.Lab10_stat)
@@ -2355,7 +2823,6 @@
         Me.Controls.Add(Me.Stat_PIc9)
         Me.Controls.Add(Me.Stat_PIc8)
         Me.Controls.Add(Me.Stat_PIc7)
-        Me.Controls.Add(Me.settings)
         Me.Controls.Add(Me.DropDownButton1)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Always_was_Top)
@@ -2431,6 +2898,34 @@
         CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SeparatorControl7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Clearpopup, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Clearpopup.ResumeLayout(False)
+        Me.Clearpopup.PerformLayout()
+        CType(Me.Ip_clear_12.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_11.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_10.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_8.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_7.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_6.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ip_clear_1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_12.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_11.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_10.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_9.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_8.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_7.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_6.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_5.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Name_clear_1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SeparatorControl5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SeparatorControl8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Stat_PIc12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Stat_PIc11, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2662,6 +3157,36 @@
     Friend WithEvents Lab2_stat As DevExpress.XtraEditors.LabelControl
     Friend WithEvents Label1 As Label
     Friend WithEvents MswornSelc As DevExpress.XtraEditors.ComboBoxEdit
+    Friend WithEvents Clearpopup As DevExpress.XtraBars.PopupControlContainer
+    Friend WithEvents DropDownButton2 As DevExpress.XtraEditors.DropDownButton
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Name_clear_1 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_12 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_11 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_10 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_9 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_8 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_7 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_6 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_5 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_4 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_3 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_2 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Ip_clear_1 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_12 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_11 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_10 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_9 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_8 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_7 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_6 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_5 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_4 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_3 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents Name_clear_2 As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents SeparatorControl5 As DevExpress.XtraEditors.SeparatorControl
+    Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
 
 #End Region
 

@@ -1324,6 +1324,7 @@ Partial Public Class Form1
         Edit_but.Enabled = False
         Start_But_Info.Visible = True
         Start_but.Enabled = True
+        MswornSelc.Enabled = True
     End Sub
 
     Private Sub Start_but_Click(sender As Object, e As EventArgs) Handles Start_but.Click
@@ -1467,10 +1468,11 @@ Partial Public Class Form1
         Start_But_Info.Visible = False
         Start_but.Enabled = False
         error_lbl.Visible = False
+        MswornSelc.Enabled = False
     End Sub
 #End Region
 
-#Region "Change IP Address Name Region"
+#Region "Change IP Address Name / Clear Ip address and name"
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
         settings.HidePopup()
     End Sub
@@ -1644,8 +1646,42 @@ Partial Public Class Form1
 
     End Sub
 
-    Private Sub IPAd1_LostFocus(sender As Object, e As EventArgs) Handles IPAd1.LostFocus
+    Private Sub Clearpopup_BeforePopup(sender As Object, e As CancelEventArgs) Handles Clearpopup.BeforePopup
+        Name_clear_1.Text = IpAdName1.Text
+        Name_clear_2.Text = IpAdName2.Text
+        Name_clear_3.Text = IpAdName3.Text
+        Name_clear_4.Text = IpAdName4.Text
+        Name_clear_5.Text = IpAdName5.Text
+        Name_clear_6.Text = IpAdName6.Text
+        Name_clear_7.Text = IpAdName7.Text
+        Name_clear_8.Text = IpAdName8.Text
+        Name_clear_9.Text = IpAdName9.Text
+        Name_clear_10.Text = IpAdName10.Text
+        Name_clear_11.Text = IpAdName11.Text
+        Name_clear_12.Text = IpAdName12.Text
+        Ip_clear_1.Text = IPAd1.Text
+        Ip_clear_2.Text = IPAd2.Text
+        Ip_clear_3.Text = IPAd3.Text
+        Ip_clear_4.Text = IPAd4.Text
+        Ip_clear_5.Text = IPAd5.Text
+        Ip_clear_6.Text = IPAd6.Text
+        Ip_clear_7.Text = IPAd7.Text
+        Ip_clear_8.Text = IPAd8.Text
+        Ip_clear_9.Text = IPAd9.Text
+        Ip_clear_10.Text = IPAd10.Text
+        Ip_clear_11.Text = IPAd11.Text
+        Ip_clear_12.Text = IPAd12.Text
+    End Sub
+    Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
+        For Each c As Control In Me.Controls
+            If TypeOf c Is DevExpress.XtraBars.PopupControlContainer Then
+                For Each ch As Control In c.Controls
+                    If TypeOf ch Is DevExpress.XtraEditors.CheckEdit Then
 
+                    End If
+                Next
+            End If
+        Next
     End Sub
 #End Region
 End Class
