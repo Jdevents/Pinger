@@ -1846,7 +1846,7 @@ Partial Public Class Form1
         bgwPing.RunWorkerAsync()
     End Sub
 
-    Private Sub settings_CloseUp(sender As Object, e As EventArgs) Handles settings.CloseUp
+    Private Sub Settings_CloseUp(sender As Object, e As EventArgs) Handles settings.CloseUp
         If Start_but.Enabled = True Then
             bgwPing.RunWorkerAsync()
             Start_but.Enabled = False
@@ -1854,7 +1854,7 @@ Partial Public Class Form1
             MswornSelc.Enabled = False
         End If
     End Sub
-
+#Region "Ping Clear"
     Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles clear_ping_info_but.Click
         pingInfo1.HighPing = -1
         pingInfo1.LowPing = 100
@@ -1882,6 +1882,8 @@ Partial Public Class Form1
         pingInfo12.LowPing = 100
     End Sub
 #End Region
+#End Region
+
 End Class
 
 Class PingInfo

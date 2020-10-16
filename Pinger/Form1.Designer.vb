@@ -703,7 +703,7 @@
         '
         'Always_was_Top
         '
-        Me.Always_was_Top.Location = New System.Drawing.Point(424, 110)
+        Me.Always_was_Top.Location = New System.Drawing.Point(1262, 113)
         Me.Always_was_Top.Name = "Always_was_Top"
         Me.Always_was_Top.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
         Me.Always_was_Top.Properties.Appearance.Options.UseForeColor = True
@@ -717,7 +717,7 @@
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Lime
-        Me.Label8.Location = New System.Drawing.Point(421, 87)
+        Me.Label8.Location = New System.Drawing.Point(1259, 90)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 18)
         Me.Label8.TabIndex = 68
@@ -1836,7 +1836,7 @@
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 838)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 139)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1376, 0)
         '
@@ -1846,7 +1846,7 @@
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 838)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 139)
         '
         'barDockControlRight
         '
@@ -1854,7 +1854,7 @@
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1376, 0)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 838)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 139)
         '
         'BarEditItem1
         '
@@ -2828,7 +2828,7 @@
         Me.clear_ping_info_but.Appearance.ForeColor = System.Drawing.Color.Lime
         Me.clear_ping_info_but.Appearance.Options.UseFont = True
         Me.clear_ping_info_but.Appearance.Options.UseForeColor = True
-        Me.clear_ping_info_but.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
+        Me.clear_ping_info_but.ImageOptions.Image = CType(resources.GetObject("clear_ping_info_but.ImageOptions.Image"), System.Drawing.Image)
         Me.clear_ping_info_but.Location = New System.Drawing.Point(272, 96)
         Me.clear_ping_info_but.Name = "clear_ping_info_but"
         Me.clear_ping_info_but.Size = New System.Drawing.Size(142, 34)
@@ -2839,7 +2839,7 @@
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 838)
+        Me.ClientSize = New System.Drawing.Size(1376, 139)
         Me.Controls.Add(Me.clear_ping_info_but)
         Me.Controls.Add(Me.DropDownButton2)
         Me.Controls.Add(Me.Clearpopup)
