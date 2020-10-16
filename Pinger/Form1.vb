@@ -1472,7 +1472,7 @@ Partial Public Class Form1
     End Sub
 #End Region
 
-#Region "Change IP Address Name / Clear Ip address and name"
+#Region "Change / Clear IP Address And Name"
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
         settings.HidePopup()
     End Sub
@@ -1647,6 +1647,7 @@ Partial Public Class Form1
     End Sub
 
     Private Sub Clearpopup_BeforePopup(sender As Object, e As CancelEventArgs) Handles Clearpopup.BeforePopup
+        bgwPing.CancelAsync()
         Name_clear_1.Text = IpAdName1.Text
         Name_clear_2.Text = IpAdName2.Text
         Name_clear_3.Text = IpAdName3.Text
@@ -1673,19 +1674,215 @@ Partial Public Class Form1
         Ip_clear_12.Text = IPAd12.Text
     End Sub
     Private Sub SimpleButton3_Click(sender As Object, e As EventArgs) Handles SimpleButton3.Click
-        For Each c As Control In Me.Controls
-            If TypeOf c Is DevExpress.XtraBars.PopupControlContainer Then
-                For Each ch As Control In c.Controls
-                    If TypeOf ch Is DevExpress.XtraEditors.CheckEdit Then
 
-                    End If
-                Next
-            End If
-        Next
+#Region "Name Clear"
+        If Name_clear_1.Checked = True Then
+            IpAdName1.Text = "IP Address 1:"
+            Name_set_lbl1.Text = "IP Address 1:"
+            Name_clear_1.Checked = False
+        End If
+
+        If Name_clear_2.Checked = True Then
+            IpAdName2.Text = "IP Address 2:"
+            Name_set_lbl2.Text = "IP Address 2:"
+            Name_clear_2.Checked = False
+        End If
+
+        If Name_clear_3.Checked = True Then
+            IpAdName3.Text = "IP Address 3:"
+            Name_set_lbl3.Text = "IP Address 3:"
+            Name_clear_3.Checked = False
+        End If
+
+        If Name_clear_4.Checked = True Then
+            IpAdName4.Text = "IP Address 4:"
+            Name_set_lbl4.Text = "IP Address 4:"
+            Name_clear_4.Checked = False
+        End If
+
+        If Name_clear_5.Checked = True Then
+            IpAdName5.Text = "IP Address 5:"
+            Name_set_lbl5.Text = "IP Address 5:"
+            Name_clear_5.Checked = False
+        End If
+
+        If Name_clear_6.Checked = True Then
+            IpAdName6.Text = "IP Address 6:"
+            Name_set_lbl6.Text = "IP Address 6:"
+            Name_clear_6.Checked = False
+        End If
+
+        If Name_clear_7.Checked = True Then
+            IpAdName7.Text = "IP Address 7:"
+            Name_set_lbl7.Text = "IP Address 7:"
+            Name_clear_7.Checked = False
+        End If
+
+        If Name_clear_8.Checked = True Then
+            IpAdName8.Text = "IP Address 8:"
+            Name_set_lbl8.Text = "IP Address 8:"
+            Name_clear_8.Checked = False
+        End If
+
+        If Name_clear_9.Checked = True Then
+            IpAdName9.Text = "IP Address 9:"
+            Name_set_lbl9.Text = "IP Address 9:"
+            Name_clear_9.Checked = False
+        End If
+
+        If Name_clear_10.Checked = True Then
+            IpAdName10.Text = "IP Address 10:"
+            Name_set_lbl10.Text = "IP Address 10:"
+            Name_clear_10.Checked = False
+        End If
+
+        If Name_clear_11.Checked = True Then
+            IpAdName11.Text = "IP Address 11:"
+            Name_set_lbl11.Text = "IP Address 11:"
+            Name_clear_11.Checked = False
+        End If
+
+        If Name_clear_12.Checked = True Then
+            IpAdName12.Text = "IP Address 12:"
+            Name_set_lbl12.Text = "IP Address 12:"
+            Name_clear_12.Checked = False
+        End If
+
+#End Region
+
+#Region "IP Clear"
+
+        If Ip_clear_1.Checked = True Then
+            IPAd1.Text = ""
+            Ip_clear_1.Text = ""
+            IpAdName1.Text = "IP Address 1:"
+            Ip_clear_1.Checked = False
+        End If
+
+        If Ip_clear_2.Checked = True Then
+            IPAd2.Text = ""
+            Ip_clear_2.Text = ""
+            IpAdName2.Text = "IP Address 2:"
+            Ip_clear_2.Checked = False
+        End If
+
+        If Ip_clear_3.Checked = True Then
+            IPAd3.Text = ""
+            Ip_clear_3.Text = ""
+            IpAdName3.Text = "IP Address 3:"
+            Ip_clear_3.Checked = False
+        End If
+
+        If Ip_clear_4.Checked = True Then
+            IPAd4.Text = ""
+            Ip_clear_4.Text = ""
+            IpAdName4.Text = "IP Address 4:"
+            Ip_clear_4.Checked = False
+        End If
+
+        If Ip_clear_5.Checked = True Then
+            IPAd5.Text = ""
+            Ip_clear_5.Text = ""
+            IpAdName5.Text = "IP Address 5:"
+            Ip_clear_5.Checked = False
+        End If
+
+        If Ip_clear_6.Checked = True Then
+            IPAd6.Text = ""
+            Ip_clear_6.Text = ""
+            IpAdName6.Text = "IP Address 6:"
+            Ip_clear_6.Checked = False
+        End If
+
+        If Ip_clear_7.Checked = True Then
+            IPAd7.Text = ""
+            Ip_clear_7.Text = ""
+            IpAdName7.Text = "IP Address 7:"
+            Ip_clear_7.Checked = False
+        End If
+
+        If Ip_clear_8.Checked = True Then
+            IPAd8.Text = ""
+            Ip_clear_8.Text = ""
+            IpAdName8.Text = "IP Address 8:"
+            Ip_clear_8.Checked = False
+        End If
+
+        If Ip_clear_9.Checked = True Then
+            IPAd9.Text = ""
+            Ip_clear_9.Text = ""
+            IpAdName9.Text = "IP Address 9:"
+            Ip_clear_9.Checked = False
+        End If
+
+        If Ip_clear_10.Checked = True Then
+            IPAd10.Text = ""
+            Ip_clear_10.Text = ""
+            IpAdName10.Text = "IP Address 10:"
+            Ip_clear_10.Checked = False
+        End If
+
+        If Ip_clear_11.Checked = True Then
+            IPAd11.Text = ""
+            Ip_clear_11.Text = ""
+            IpAdName11.Text = "IP Address 11:"
+            Ip_clear_11.Checked = False
+        End If
+
+        If Ip_clear_12.Checked = True Then
+            IPAd12.Text = ""
+            Ip_clear_12.Text = ""
+            IpAdName12.Text = "IP Address 12:"
+            Ip_clear_12.Checked = False
+        End If
+
+#End Region
+
+        Call Save_data()
+
+    End Sub
+
+    Private Sub Clearpopup_CloseUp(sender As Object, e As EventArgs) Handles Clearpopup.CloseUp
+        bgwPing.RunWorkerAsync()
+    End Sub
+
+    Private Sub settings_CloseUp(sender As Object, e As EventArgs) Handles settings.CloseUp
+        If Start_but.Enabled = True Then
+            bgwPing.RunWorkerAsync()
+            Start_but.Enabled = False
+            Edit_but.Enabled = True
+            MswornSelc.Enabled = False
+        End If
+    End Sub
+
+    Private Sub SimpleButton4_Click(sender As Object, e As EventArgs) Handles clear_ping_info_but.Click
+        pingInfo1.HighPing = -1
+        pingInfo1.LowPing = 100
+        pingInfo2.HighPing = -1
+        pingInfo2.LowPing = 100
+        pingInfo3.HighPing = -1
+        pingInfo3.LowPing = 100
+        pingInfo4.HighPing = -1
+        pingInfo4.LowPing = 100
+        pingInfo5.HighPing = -1
+        pingInfo5.LowPing = 100
+        pingInfo6.HighPing = -1
+        pingInfo6.LowPing = 100
+        pingInfo7.HighPing = -1
+        pingInfo7.LowPing = 100
+        pingInfo8.HighPing = -1
+        pingInfo8.LowPing = 100
+        pingInfo9.HighPing = -1
+        pingInfo9.LowPing = 100
+        pingInfo10.HighPing = -1
+        pingInfo10.LowPing = 100
+        pingInfo11.HighPing = -1
+        pingInfo11.LowPing = 100
+        pingInfo12.HighPing = -1
+        pingInfo12.LowPing = 100
     End Sub
 #End Region
 End Class
-
 
 Class PingInfo
     Public IP As String

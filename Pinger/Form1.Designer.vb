@@ -275,6 +275,7 @@
         Me.Lab10_stat = New DevExpress.XtraEditors.LabelControl()
         Me.Lab11_stat = New DevExpress.XtraEditors.LabelControl()
         Me.Lab12_stat = New DevExpress.XtraEditors.LabelControl()
+        Me.clear_ping_info_but = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -702,7 +703,7 @@
         '
         'Always_was_Top
         '
-        Me.Always_was_Top.Location = New System.Drawing.Point(280, 110)
+        Me.Always_was_Top.Location = New System.Drawing.Point(424, 110)
         Me.Always_was_Top.Name = "Always_was_Top"
         Me.Always_was_Top.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
         Me.Always_was_Top.Properties.Appearance.Options.UseForeColor = True
@@ -716,7 +717,7 @@
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Lime
-        Me.Label8.Location = New System.Drawing.Point(277, 87)
+        Me.Label8.Location = New System.Drawing.Point(421, 87)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(112, 18)
         Me.Label8.TabIndex = 68
@@ -744,6 +745,7 @@
         'TSIPNAME1
         '
         Me.TSIPNAME1.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME1.Name = "TSIPNAME1"
         Me.TSIPNAME1.ReadOnly = True
         Me.TSIPNAME1.Size = New System.Drawing.Size(100, 23)
@@ -752,6 +754,7 @@
         'TSIPAD1
         '
         Me.TSIPAD1.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD1.Name = "TSIPAD1"
         Me.TSIPAD1.ReadOnly = True
         Me.TSIPAD1.Size = New System.Drawing.Size(100, 23)
@@ -759,6 +762,7 @@
         'TSPING1
         '
         Me.TSPING1.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING1.Name = "TSPING1"
         Me.TSPING1.ReadOnly = True
         Me.TSPING1.Size = New System.Drawing.Size(100, 23)
@@ -771,6 +775,7 @@
         'TSIPNAME2
         '
         Me.TSIPNAME2.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME2.Name = "TSIPNAME2"
         Me.TSIPNAME2.ReadOnly = True
         Me.TSIPNAME2.Size = New System.Drawing.Size(100, 23)
@@ -779,6 +784,7 @@
         'TSIPAD2
         '
         Me.TSIPAD2.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD2.Name = "TSIPAD2"
         Me.TSIPAD2.ReadOnly = True
         Me.TSIPAD2.Size = New System.Drawing.Size(100, 23)
@@ -786,6 +792,7 @@
         'TSPING2
         '
         Me.TSPING2.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING2.Name = "TSPING2"
         Me.TSPING2.ReadOnly = True
         Me.TSPING2.Size = New System.Drawing.Size(100, 23)
@@ -798,6 +805,7 @@
         'TSIPNAME3
         '
         Me.TSIPNAME3.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME3.Name = "TSIPNAME3"
         Me.TSIPNAME3.ReadOnly = True
         Me.TSIPNAME3.Size = New System.Drawing.Size(100, 23)
@@ -806,6 +814,7 @@
         'TSIPAD3
         '
         Me.TSIPAD3.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD3.Name = "TSIPAD3"
         Me.TSIPAD3.ReadOnly = True
         Me.TSIPAD3.Size = New System.Drawing.Size(100, 23)
@@ -813,6 +822,7 @@
         'TSPING3
         '
         Me.TSPING3.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING3.Name = "TSPING3"
         Me.TSPING3.ReadOnly = True
         Me.TSPING3.Size = New System.Drawing.Size(100, 23)
@@ -825,6 +835,7 @@
         'TSIPNAME4
         '
         Me.TSIPNAME4.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME4.Name = "TSIPNAME4"
         Me.TSIPNAME4.ReadOnly = True
         Me.TSIPNAME4.Size = New System.Drawing.Size(100, 23)
@@ -833,6 +844,7 @@
         'TSIPAD4
         '
         Me.TSIPAD4.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD4.Name = "TSIPAD4"
         Me.TSIPAD4.ReadOnly = True
         Me.TSIPAD4.Size = New System.Drawing.Size(100, 23)
@@ -840,6 +852,7 @@
         'TSPING4
         '
         Me.TSPING4.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING4.Name = "TSPING4"
         Me.TSPING4.ReadOnly = True
         Me.TSPING4.Size = New System.Drawing.Size(100, 23)
@@ -852,6 +865,7 @@
         'TSIPNAME5
         '
         Me.TSIPNAME5.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME5.Name = "TSIPNAME5"
         Me.TSIPNAME5.ReadOnly = True
         Me.TSIPNAME5.Size = New System.Drawing.Size(100, 23)
@@ -860,6 +874,7 @@
         'TSIPAD5
         '
         Me.TSIPAD5.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD5.Name = "TSIPAD5"
         Me.TSIPAD5.ReadOnly = True
         Me.TSIPAD5.Size = New System.Drawing.Size(100, 23)
@@ -867,6 +882,7 @@
         'TSPING5
         '
         Me.TSPING5.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING5.Name = "TSPING5"
         Me.TSPING5.ReadOnly = True
         Me.TSPING5.Size = New System.Drawing.Size(100, 23)
@@ -879,6 +895,7 @@
         'TSIPNAME6
         '
         Me.TSIPNAME6.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME6.Name = "TSIPNAME6"
         Me.TSIPNAME6.ReadOnly = True
         Me.TSIPNAME6.Size = New System.Drawing.Size(100, 23)
@@ -887,6 +904,7 @@
         'TSIPAD6
         '
         Me.TSIPAD6.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD6.Name = "TSIPAD6"
         Me.TSIPAD6.ReadOnly = True
         Me.TSIPAD6.Size = New System.Drawing.Size(100, 23)
@@ -894,6 +912,7 @@
         'TSPING6
         '
         Me.TSPING6.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING6.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING6.Name = "TSPING6"
         Me.TSPING6.ReadOnly = True
         Me.TSPING6.Size = New System.Drawing.Size(100, 23)
@@ -908,6 +927,7 @@
         'TSIPNAME7
         '
         Me.TSIPNAME7.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME7.Name = "TSIPNAME7"
         Me.TSIPNAME7.ReadOnly = True
         Me.TSIPNAME7.Size = New System.Drawing.Size(100, 23)
@@ -915,6 +935,7 @@
         'TSIPAD7
         '
         Me.TSIPAD7.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD7.Name = "TSIPAD7"
         Me.TSIPAD7.ReadOnly = True
         Me.TSIPAD7.Size = New System.Drawing.Size(100, 23)
@@ -922,6 +943,7 @@
         'TSPING7
         '
         Me.TSPING7.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING7.Name = "TSPING7"
         Me.TSPING7.ReadOnly = True
         Me.TSPING7.Size = New System.Drawing.Size(100, 23)
@@ -934,6 +956,7 @@
         'TSIPNAME8
         '
         Me.TSIPNAME8.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME8.Name = "TSIPNAME8"
         Me.TSIPNAME8.ReadOnly = True
         Me.TSIPNAME8.Size = New System.Drawing.Size(100, 23)
@@ -941,6 +964,7 @@
         'TSIPAD8
         '
         Me.TSIPAD8.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD8.Name = "TSIPAD8"
         Me.TSIPAD8.ReadOnly = True
         Me.TSIPAD8.Size = New System.Drawing.Size(100, 23)
@@ -948,6 +972,7 @@
         'TSPING8
         '
         Me.TSPING8.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING8.Name = "TSPING8"
         Me.TSPING8.ReadOnly = True
         Me.TSPING8.Size = New System.Drawing.Size(100, 23)
@@ -960,6 +985,7 @@
         'TSIPNAME9
         '
         Me.TSIPNAME9.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME9.Name = "TSIPNAME9"
         Me.TSIPNAME9.ReadOnly = True
         Me.TSIPNAME9.Size = New System.Drawing.Size(100, 23)
@@ -967,6 +993,7 @@
         'TSIPAD9
         '
         Me.TSIPAD9.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD9.Name = "TSIPAD9"
         Me.TSIPAD9.ReadOnly = True
         Me.TSIPAD9.Size = New System.Drawing.Size(100, 23)
@@ -974,6 +1001,7 @@
         'TSPING9
         '
         Me.TSPING9.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING9.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING9.Name = "TSPING9"
         Me.TSPING9.ReadOnly = True
         Me.TSPING9.Size = New System.Drawing.Size(100, 23)
@@ -986,6 +1014,7 @@
         'TSIPNAME10
         '
         Me.TSIPNAME10.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME10.Name = "TSIPNAME10"
         Me.TSIPNAME10.ReadOnly = True
         Me.TSIPNAME10.Size = New System.Drawing.Size(100, 23)
@@ -993,6 +1022,7 @@
         'TSIPAD10
         '
         Me.TSIPAD10.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD10.Name = "TSIPAD10"
         Me.TSIPAD10.ReadOnly = True
         Me.TSIPAD10.Size = New System.Drawing.Size(100, 23)
@@ -1000,6 +1030,7 @@
         'TSPING10
         '
         Me.TSPING10.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING10.Name = "TSPING10"
         Me.TSPING10.ReadOnly = True
         Me.TSPING10.Size = New System.Drawing.Size(100, 23)
@@ -1012,6 +1043,7 @@
         'TSIPNAME11
         '
         Me.TSIPNAME11.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME11.Name = "TSIPNAME11"
         Me.TSIPNAME11.ReadOnly = True
         Me.TSIPNAME11.Size = New System.Drawing.Size(100, 23)
@@ -1019,6 +1051,7 @@
         'TSIPAD11
         '
         Me.TSIPAD11.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD11.Name = "TSIPAD11"
         Me.TSIPAD11.ReadOnly = True
         Me.TSIPAD11.Size = New System.Drawing.Size(100, 23)
@@ -1026,6 +1059,7 @@
         'TSPING11
         '
         Me.TSPING11.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING11.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING11.Name = "TSPING11"
         Me.TSPING11.ReadOnly = True
         Me.TSPING11.Size = New System.Drawing.Size(100, 23)
@@ -1038,6 +1072,7 @@
         'TSIPNAME12
         '
         Me.TSIPNAME12.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TSIPNAME12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPNAME12.Name = "TSIPNAME12"
         Me.TSIPNAME12.ReadOnly = True
         Me.TSIPNAME12.Size = New System.Drawing.Size(100, 23)
@@ -1045,6 +1080,7 @@
         'TSIPAD12
         '
         Me.TSIPAD12.BackColor = System.Drawing.Color.LightGray
+        Me.TSIPAD12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSIPAD12.Name = "TSIPAD12"
         Me.TSIPAD12.ReadOnly = True
         Me.TSIPAD12.Size = New System.Drawing.Size(100, 23)
@@ -1052,6 +1088,7 @@
         'TSPING12
         '
         Me.TSPING12.BackColor = System.Drawing.Color.LightGray
+        Me.TSPING12.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TSPING12.Name = "TSPING12"
         Me.TSPING12.ReadOnly = True
         Me.TSPING12.Size = New System.Drawing.Size(100, 23)
@@ -1183,7 +1220,7 @@
         Me.settings.Controls.Add(Me.IPAd6)
         Me.settings.Controls.Add(Me.SeparatorControl6)
         Me.settings.Controls.Add(Me.SeparatorControl7)
-        Me.settings.Location = New System.Drawing.Point(37, 532)
+        Me.settings.Location = New System.Drawing.Point(544, 501)
         Me.settings.Manager = Me.BarManager1
         Me.settings.Name = "settings"
         Me.settings.Size = New System.Drawing.Size(1162, 325)
@@ -1799,7 +1836,7 @@
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 933)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 838)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1376, 0)
         '
@@ -1809,7 +1846,7 @@
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 933)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 838)
         '
         'barDockControlRight
         '
@@ -1817,7 +1854,7 @@
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1376, 0)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 933)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 838)
         '
         'BarEditItem1
         '
@@ -2081,7 +2118,7 @@
         Me.Clearpopup.Controls.Add(Me.Name_clear_1)
         Me.Clearpopup.Controls.Add(Me.SeparatorControl5)
         Me.Clearpopup.Controls.Add(Me.SimpleButton1)
-        Me.Clearpopup.Location = New System.Drawing.Point(37, 153)
+        Me.Clearpopup.Location = New System.Drawing.Point(90, 428)
         Me.Clearpopup.Manager = Me.BarManager1
         Me.Clearpopup.Name = "Clearpopup"
         Me.Clearpopup.Size = New System.Drawing.Size(701, 286)
@@ -2097,7 +2134,7 @@
         Me.SimpleButton3.Name = "SimpleButton3"
         Me.SimpleButton3.Size = New System.Drawing.Size(123, 34)
         Me.SimpleButton3.TabIndex = 150
-        Me.SimpleButton3.Text = "Clear All"
+        Me.SimpleButton3.Text = "Clear Selected"
         '
         'Ip_clear_12
         '
@@ -2785,11 +2822,25 @@
         Me.Lab12_stat.TabIndex = 143
         Me.Lab12_stat.Text = "Not Set"
         '
+        'clear_ping_info_but
+        '
+        Me.clear_ping_info_but.Appearance.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.clear_ping_info_but.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.clear_ping_info_but.Appearance.Options.UseFont = True
+        Me.clear_ping_info_but.Appearance.Options.UseForeColor = True
+        Me.clear_ping_info_but.ImageOptions.Image = CType(resources.GetObject("SimpleButton4.ImageOptions.Image"), System.Drawing.Image)
+        Me.clear_ping_info_but.Location = New System.Drawing.Point(272, 96)
+        Me.clear_ping_info_but.Name = "clear_ping_info_but"
+        Me.clear_ping_info_but.Size = New System.Drawing.Size(142, 34)
+        Me.clear_ping_info_but.TabIndex = 154
+        Me.clear_ping_info_but.Text = "Clear Ping Info"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 933)
+        Me.ClientSize = New System.Drawing.Size(1376, 838)
+        Me.Controls.Add(Me.clear_ping_info_but)
         Me.Controls.Add(Me.DropDownButton2)
         Me.Controls.Add(Me.Clearpopup)
         Me.Controls.Add(Me.settings)
@@ -3187,6 +3238,7 @@
     Friend WithEvents Name_clear_2 As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents SeparatorControl5 As DevExpress.XtraEditors.SeparatorControl
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents clear_ping_info_but As DevExpress.XtraEditors.SimpleButton
 
 #End Region
 
