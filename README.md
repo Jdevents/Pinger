@@ -8,8 +8,8 @@ It was created for one purpose that this is to ping ip's, I had created it to pi
 
 
 Pinger does have the following features:
-    Name what each ip is
-    All ip's and names are saved to a .json
-    Can ping up to 12 ip's at once
-    Visual wornings when a ping is to high
-    A notify icon that has a menue built in to see all pings and ping times
+1. Name what each ip is
+2. All ip's and names are saved to a .json
+3. Can ping up to 12 ip's at once
+4. Visual wornings when a ping is to high
+5. A notify icon that has a menue built in to see all pings and ping times
