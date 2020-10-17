@@ -27,9 +27,7 @@ Partial Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Computer.FileSystem.FileExists(data) = True Then
-            Load_settings()
-        End If
+        Call check()
     End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -63,6 +61,7 @@ Partial Public Class Form1
     End Sub
 
 #Region "Saving/loading Json File"
+#Region "Load"
     Private Sub Load_settings()
 
         Dim json As String = File.ReadAllText(data)
@@ -128,7 +127,22 @@ Partial Public Class Form1
             End Select
         Next
     End Sub
+#End Region
 
+#Region "File Check"
+    Private Sub check()
+        If My.Computer.FileSystem.FileExists(data) = True Then
+            Load_settings()
+        ElseIf My.Computer.FileSystem.FileExists(data) = False Then
+            My.Computer.FileSystem.CreateDirectory("Data_Folder")
+            Save_data()
+            Load_settings()
+        End If
+    End Sub
+
+#End Region
+
+#Region "Save"
     Private Sub Save_data()
         Dim list As New List(Of Save_Items)
         For Each c As Control In Me.Controls
@@ -231,6 +245,7 @@ Partial Public Class Form1
         Next
         File.WriteAllText(data, JsonConvert.SerializeObject(list))
     End Sub
+#End Region
 #End Region
 
 #Region "Background Worker"
