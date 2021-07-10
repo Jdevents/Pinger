@@ -276,6 +276,7 @@
         Me.Lab11_stat = New DevExpress.XtraEditors.LabelControl()
         Me.Lab12_stat = New DevExpress.XtraEditors.LabelControl()
         Me.clear_ping_info_but = New DevExpress.XtraEditors.SimpleButton()
+        Me.RepError = New DevExpress.XtraEditors.ComboBoxEdit()
         CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -359,6 +360,7 @@
         CType(Me.Stat_PIc9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Stat_PIc8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Stat_PIc7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepError.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RepositoryItemTextEdit1
@@ -1220,7 +1222,7 @@
         Me.settings.Controls.Add(Me.IPAd6)
         Me.settings.Controls.Add(Me.SeparatorControl6)
         Me.settings.Controls.Add(Me.SeparatorControl7)
-        Me.settings.Location = New System.Drawing.Point(544, 501)
+        Me.settings.Location = New System.Drawing.Point(55, 171)
         Me.settings.Manager = Me.BarManager1
         Me.settings.Name = "settings"
         Me.settings.Size = New System.Drawing.Size(1162, 325)
@@ -2118,7 +2120,7 @@
         Me.Clearpopup.Controls.Add(Me.Name_clear_1)
         Me.Clearpopup.Controls.Add(Me.SeparatorControl5)
         Me.Clearpopup.Controls.Add(Me.SimpleButton1)
-        Me.Clearpopup.Location = New System.Drawing.Point(90, 428)
+        Me.Clearpopup.Location = New System.Drawing.Point(889, 580)
         Me.Clearpopup.Manager = Me.BarManager1
         Me.Clearpopup.Name = "Clearpopup"
         Me.Clearpopup.Size = New System.Drawing.Size(701, 286)
@@ -2835,11 +2837,27 @@
         Me.clear_ping_info_but.TabIndex = 154
         Me.clear_ping_info_but.Text = "Clear Ping Info"
         '
+        'RepError
+        '
+        Me.RepError.EditValue = "3 MS (Default)"
+        Me.RepError.Enabled = False
+        Me.RepError.Location = New System.Drawing.Point(804, 115)
+        Me.RepError.Name = "RepError"
+        Me.RepError.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.RepError.Properties.Appearance.Options.UseForeColor = True
+        Me.RepError.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepError.Properties.DropDownRows = 5
+        Me.RepError.Properties.Items.AddRange(New Object() {"3 MS (Default)", "4 MS", "5 MS", "6 MS", "7 MS", "8 MS", "9 MS", "10 MS"})
+        Me.RepError.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.RepError.Size = New System.Drawing.Size(101, 20)
+        Me.RepError.TabIndex = 159
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1376, 139)
+        Me.Controls.Add(Me.RepError)
         Me.Controls.Add(Me.clear_ping_info_but)
         Me.Controls.Add(Me.DropDownButton2)
         Me.Controls.Add(Me.Clearpopup)
@@ -2984,6 +3002,7 @@
         CType(Me.Stat_PIc9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Stat_PIc8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Stat_PIc7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepError.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3239,6 +3258,7 @@
     Friend WithEvents SeparatorControl5 As DevExpress.XtraEditors.SeparatorControl
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents clear_ping_info_but As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents RepError As DevExpress.XtraEditors.ComboBoxEdit
 
 #End Region
 

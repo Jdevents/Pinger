@@ -21,6 +21,19 @@ Partial Public Class Form1
     Dim pingInfo12 As New PingInfo
     Dim data As String = Application.StartupPath & "\Data_Folder\data.json"
     Private Delegate Sub dlgUpdateStatus(text As String)
+    Dim untext As String = "Unresponsive count: "
+    Dim un1 As Integer
+    Dim un2 As Integer
+    Dim un3 As Integer
+    Dim un4 As Integer
+    Dim un5 As Integer
+    Dim un6 As Integer
+    Dim un7 As Integer
+    Dim un8 As Integer
+    Dim un9 As Integer
+    Dim un10 As Integer
+    Dim un11 As Integer
+    Dim un12 As Integer
 #Enable Warning IDE0044 ' Add read only modifier
     Public Sub New()
         InitializeComponent()
@@ -252,6 +265,7 @@ Partial Public Class Form1
     Private Sub UpdateStatus(text As String)
         Dim errormessage As String = ""
         Dim msWorn As Integer = 3
+        Dim RspError As Integer = 3
 
         'The InvokeRequired method returns True if the thread that calls it     
         'is running from a different thread. In that case we create a delegate  
@@ -285,6 +299,25 @@ Partial Public Class Form1
                     msWorn = 10
             End Select
 
+            Select Case RepError.SelectedIndex
+                Case 0
+                    RspError = 3
+                Case 1
+                    RspError = 4
+                Case 2
+                    RspError = 5
+                Case 3
+                    RspError = 6
+                Case 4
+                    RspError = 7
+                Case 5
+                    RspError = 8
+                Case 6
+                    RspError = 9
+                Case 7
+                    RspError = 10
+            End Select
+
             Select Case workingonip
                 Case 1
                     If text.StartsWith("Responding") Then
@@ -302,7 +335,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP1_lab.Text = IpAdName1.Text
-                        IP1_lab.ToolTip = IPAd1.Text
+                        IP1_lab.ToolTipTitle = IPAd1.Text
+                        IP1_lab.ToolTip = untext & un1
                         TSIPNAME1.Text = IpAdName1.Text
                         TSIPAD1.Text = IPAd1.Text
                         TSPING1.Text = text
@@ -318,7 +352,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP1_lab.Text = IPAd1.Text
-                        IP1_lab.ToolTip = IpAdName1.Text
+                        IP1_lab.ToolTipTitle = IpAdName1.Text
+                        un1 += 1
+                        IP1_lab.ToolTip = untext & un1
                         TSIPAD1.Text = IPAd1.Text
                         Lab1_stat.Text = text
                         IPAd1.BackColor = Color.Red
@@ -352,7 +388,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP2_lab.Text = IpAdName2.Text
-                        IP2_lab.ToolTip = IPAd2.Text
+                        IP2_lab.ToolTipTitle = IPAd2.Text
+                        IP2_lab.ToolTip = untext & un2
                         Lab2_stat.Text = text
                         TSIPAD2.Text = IPAd2.Text
                         TSPING2.Text = text
@@ -366,7 +403,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP2_lab.Text = IPAd2.Text
-                        IP2_lab.ToolTip = IpAdName2.Text
+                        IP2_lab.ToolTipTitle = IpAdName2.Text
+                        un2 += 1
+                        IP2_lab.ToolTip = untext & un2
                         TSIPAD2.Text = IPAd2.Text
                         Lab2_stat.Text = text
                         IPAd2.BackColor = Color.Red
@@ -400,7 +439,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP3_lab.Text = IpAdName3.Text
-                        IP3_lab.ToolTip = IPAd3.Text
+                        IP3_lab.ToolTipTitle = IPAd3.Text
+                        IP3_lab.ToolTip = untext & un3
                         Lab3_stat.Text = text
                         TSIPAD3.Text = IPAd3.Text
                         TSPING3.Text = text
@@ -414,7 +454,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP3_lab.Text = IPAd3.Text
-                        IP3_lab.ToolTip = IpAdName3.Text
+                        IP3_lab.ToolTipTitle = IpAdName3.Text
+                        un3 += 1
+                        IP3_lab.ToolTip = untext & un3
                         TSIPAD3.Text = IPAd3.Text
                         Lab3_stat.Text = text
                         IPAd3.BackColor = Color.Red
@@ -448,7 +490,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP4_lab.Text = IpAdName4.Text
-                        IP4_lab.ToolTip = IPAd4.Text
+                        IP4_lab.ToolTipTitle = IPAd4.Text
+                        IP4_lab.ToolTip = untext & un4
                         Lab4_stat.Text = text
                         TSIPAD4.Text = IPAd4.Text
                         TSPING4.Text = text
@@ -462,7 +505,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP4_lab.Text = IPAd4.Text
-                        IP4_lab.ToolTip = IpAdName4.Text
+                        IP4_lab.ToolTipTitle = IpAdName4.Text
+                        un4 += 1
+                        IP4_lab.ToolTip = untext & un4
                         TSIPAD4.Text = IPAd4.Text
                         Lab4_stat.Text = text
                         IPAd4.BackColor = Color.Red
@@ -496,7 +541,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP5_lab.Text = IpAdName5.Text
-                        IP5_lab.ToolTip = IPAd5.Text
+                        IP5_lab.ToolTipTitle = IPAd5.Text
+                        IP5_lab.ToolTip = untext & un5
                         Lab5_stat.Text = text
                         TSIPAD5.Text = IPAd5.Text
                         TSPING5.Text = text
@@ -510,7 +556,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP5_lab.Text = IPAd5.Text
-                        IP5_lab.ToolTip = IpAdName5.Text
+                        IP5_lab.ToolTipTitle = IpAdName5.Text
+                        un5 += 1
+                        IP5_lab.ToolTip = untext & un5
                         TSIPAD5.Text = IPAd5.Text
                         Lab5_stat.Text = text
                         IPAd5.BackColor = Color.Red
@@ -544,7 +592,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP6_lab.Text = IpAdName6.Text
-                        IP6_lab.ToolTip = IPAd6.Text
+                        IP6_lab.ToolTipTitle = IPAd6.Text
+                        IP6_lab.ToolTip = untext & un6
                         Lab6_stat.Text = text
                         TSIPAD6.Text = IPAd6.Text
                         TSPING6.Text = text
@@ -558,7 +607,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP6_lab.Text = IPAd6.Text
-                        IP6_lab.ToolTip = IpAdName6.Text
+                        IP6_lab.ToolTipTitle = IpAdName6.Text
+                        un6 += 1
+                        IP6_lab.ToolTip = untext & un6
                         TSIPAD6.Text = IPAd6.Text
                         Lab6_stat.Text = text
                         IPAd6.BackColor = Color.Red
@@ -593,7 +644,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP7_lab.Text = IpAdName7.Text
-                        IP7_lab.ToolTip = IPAd7.Text
+                        IP7_lab.ToolTipTitle = IPAd7.Text
+                        IP7_lab.ToolTip = untext & un7
                         Lab7_stat.Text = text
                         TSIPAD7.Text = IPAd7.Text
                         TSPING7.Text = text
@@ -607,7 +659,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP7_lab.Text = IPAd7.Text
-                        IP7_lab.ToolTip = IpAdName7.Text
+                        IP7_lab.ToolTipTitle = IpAdName7.Text
+                        un7 += 1
+                        IP7_lab.ToolTipTitle = untext & un7
                         TSIPAD7.Text = IPAd7.Text
                         Lab7_stat.Text = text
                         IPAd7.BackColor = Color.Red
@@ -642,7 +696,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP8_lab.Text = IpAdName8.Text
-                        IP8_lab.ToolTip = IPAd8.Text
+                        IP8_lab.ToolTipTitle = IPAd8.Text
+                        IP8_lab.ToolTipTitle = untext & un8
                         Lab8_stat.Text = text
                         TSIPAD8.Text = IPAd8.Text
                         TSPING8.Text = text
@@ -656,7 +711,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP8_lab.Text = IpAdName8.Text
-                        IP8_lab.ToolTip = IPAd1.Text
+                        IP8_lab.ToolTipTitle = IPAd1.Text
+                        un8 += 1
+                        IP8_lab.ToolTipTitle = untext & un8
                         TSIPAD8.Text = IPAd8.Text
                         Lab8_stat.Text = text
                         IPAd8.BackColor = Color.Red
@@ -691,7 +748,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP9_lab.Text = IpAdName9.Text
-                        IP9_lab.ToolTip = IPAd9.Text
+                        IP9_lab.ToolTipTitle = IPAd9.Text
+                        IP9_lab.ToolTipTitle = untext & un9
                         Lab9_stat.Text = text
                         TSIPAD9.Text = IPAd9.Text
                         TSPING9.Text = text
@@ -705,7 +763,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP9_lab.Text = IPAd9.Text
-                        IP9_lab.ToolTip = IpAdName9.Text
+                        IP9_lab.ToolTipTitle = IpAdName9.Text
+                        un9 += 1
+                        IP9_lab.ToolTipTitle = untext & un9
                         TSIPAD9.Text = IPAd9.Text
                         Lab9_stat.Text = text
                         IPAd9.BackColor = Color.Red
@@ -740,7 +800,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP10_lab.Text = IpAdName10.Text
-                        IP10_lab.ToolTip = IPAd10.Text
+                        IP10_lab.ToolTipTitle = IPAd10.Text
+                        IP10_lab.ToolTip = untext & un10
                         Lab10_stat.Text = text
                         TSIPAD10.Text = IPAd10.Text
                         TSPING10.Text = text
@@ -754,7 +815,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP10_lab.Text = IPAd10.Text
-                        IP10_lab.ToolTip = IpAdName10.Text
+                        IP10_lab.ToolTipTitle = IpAdName10.Text
+                        un10 += 1
+                        IP10_lab.ToolTip = untext & un10
                         TSIPAD10.Text = IPAd10.Text
                         Lab10_stat.Text = text
                         IPAd10.BackColor = Color.Red
@@ -789,7 +852,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP11_lab.Text = IpAdName11.Text
-                        IP11_lab.ToolTip = IPAd11.Text
+                        IP11_lab.ToolTipTitle = IPAd11.Text
+                        IP11_lab.ToolTipTitle = untext & un11
                         Lab11_stat.Text = text
                         TSIPAD11.Text = IPAd11.Text
                         TSPING11.Text = text
@@ -803,7 +867,9 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP11_lab.Text = IPAd11.Text
-                        IP11_lab.ToolTip = IpAdName11.Text
+                        IP11_lab.ToolTipTitle = IpAdName11.Text
+                        un11 += 1
+                        IP11_lab.ToolTipTitle = untext & un11
                         TSIPAD11.Text = IPAd11.Text
                         Lab11_stat.Text = text
                         IPAd11.BackColor = Color.Red
@@ -838,7 +904,8 @@ Partial Public Class Form1
                     End If
                     If text <> "Error" Then
                         IP12_lab.Text = IpAdName12.Text
-                        IP12_lab.ToolTip = IPAd12.Text
+                        IP12_lab.ToolTipTitle = IPAd12.Text
+                        IP12_lab.ToolTip = untext & un12
                         Lab12_stat.Text = text
                         TSIPAD12.Text = IPAd12.Text
                         TSPING12.Text = text
@@ -852,13 +919,19 @@ Partial Public Class Form1
 
                     If text = "Not Responding" Then
                         IP12_lab.Text = IPAd12.Text
-                        IP12_lab.ToolTip = IpAdName12.Text
+                        IP12_lab.ToolTipTitle = IpAdName12.Text
+                        un12 += 1
+                        IP12_lab.ToolTip = untext & un12
                         TSIPAD12.Text = IPAd12.Text
                         Lab12_stat.Text = text
                         IPAd12.BackColor = Color.Red
                         TSIPAD12.BackColor = Color.OrangeRed
                         TSPING12.BackColor = Color.LightGray
                         Stat_PIc12.Image = ImageList1.Images(2)
+                    End If
+
+                    If un12 >= RspError Then
+                        Stat_PIc12.Image = ImageList1.Images(5)
                     End If
 
                     If text = "Not Set" Then
