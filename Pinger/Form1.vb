@@ -48,7 +48,7 @@ Partial Public Class Form1
         Threading.Thread.Sleep(100)
         bgwPing.Dispose()
         Threading.Thread.Sleep(200)
-        settings.HidePopup()
+        setup.HidePopup()
         NotifyIcon1.Visible = False
         NotifyIcon1.Dispose()
         Threading.Thread.Sleep(100)
@@ -265,7 +265,7 @@ Partial Public Class Form1
     Private Sub UpdateStatus(text As String)
         Dim errormessage As String = ""
         Dim msWorn As Integer = 3
-        Dim RspError As Integer = 3
+        Dim RspWorn As Integer = 3
 
         'The InvokeRequired method returns True if the thread that calls it     
         'is running from a different thread. In that case we create a delegate  
@@ -301,21 +301,23 @@ Partial Public Class Form1
 
             Select Case RepError.SelectedIndex
                 Case 0
-                    RspError = 3
+                    RspWorn = 3
                 Case 1
-                    RspError = 4
+                    RspWorn = 4
                 Case 2
-                    RspError = 5
+                    RspWorn = 5
                 Case 3
-                    RspError = 6
+                    RspWorn = 6
                 Case 4
-                    RspError = 7
+                    RspWorn = 7
                 Case 5
-                    RspError = 8
+                    RspWorn = 8
                 Case 6
-                    RspError = 9
+                    RspWorn = 9
                 Case 7
-                    RspError = 10
+                    RspWorn = 10
+                Case 8
+                    RspWorn = CInt(RspWorn_Other.Text.ToString)
             End Select
 
             Select Case workingonip
@@ -327,7 +329,7 @@ Partial Public Class Form1
                         Lab1_stat.ToolTip = "Ping: " & pingInfo1.LowPing & " |--| " & "Time: " & pingInfo1.LowDate
                         If pingInfo1.HighPing > msWorn Then
                             Lab1_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo1.HighPing < msWorn Then
+                        ElseIf pingInfo1.HighPing < msWorn Then
                             Lab1_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -380,7 +382,7 @@ Partial Public Class Form1
                         Lab2_stat.ToolTip = "Ping: " & pingInfo2.LowPing & " |--| " & "Time: " & pingInfo2.LowDate
                         If pingInfo2.HighPing > msWorn Then
                             Lab2_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo2.HighPing < msWorn Then
+                        ElseIf pingInfo2.HighPing < msWorn Then
                             Lab2_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -431,7 +433,7 @@ Partial Public Class Form1
                         Lab3_stat.ToolTip = "Ping: " & pingInfo3.LowPing & " |--| " & "Time: " & pingInfo3.LowDate
                         If pingInfo3.HighPing > msWorn Then
                             Lab3_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo3.HighPing < msWorn Then
+                        ElseIf pingInfo3.HighPing < msWorn Then
                             Lab3_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -482,7 +484,7 @@ Partial Public Class Form1
                         Lab4_stat.ToolTip = "Ping: " & pingInfo4.LowPing & " |--| " & "Time: " & pingInfo4.LowDate
                         If pingInfo4.HighPing > msWorn Then
                             Lab4_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo4.HighPing < msWorn Then
+                        ElseIf pingInfo4.HighPing < msWorn Then
                             Lab4_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -533,7 +535,7 @@ Partial Public Class Form1
                         Lab5_stat.ToolTip = "Ping: " & pingInfo5.LowPing & " |--| " & "Time: " & pingInfo5.LowDate
                         If pingInfo5.HighPing > msWorn Then
                             Lab5_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo5.HighPing < msWorn Then
+                        ElseIf pingInfo5.HighPing < msWorn Then
                             Lab5_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -584,7 +586,7 @@ Partial Public Class Form1
                         Lab6_stat.ToolTip = "Ping: " & pingInfo6.LowPing & " |--| " & "Time: " & pingInfo6.LowDate
                         If pingInfo6.HighPing > msWorn Then
                             Lab6_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo6.HighPing < msWorn Then
+                        ElseIf pingInfo6.HighPing < msWorn Then
                             Lab6_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -636,7 +638,7 @@ Partial Public Class Form1
                         Lab7_stat.ToolTip = "Ping: " & pingInfo7.LowPing & " |--| " & "Time: " & pingInfo7.LowDate
                         If pingInfo7.HighPing > msWorn Then
                             Lab7_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo7.HighPing < msWorn Then
+                        ElseIf pingInfo7.HighPing < msWorn Then
                             Lab7_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -688,7 +690,7 @@ Partial Public Class Form1
                         Lab8_stat.ToolTip = "Ping: " & pingInfo8.LowPing & " |--| " & "Time: " & pingInfo8.LowDate
                         If pingInfo8.HighPing > msWorn Then
                             Lab8_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo8.HighPing < msWorn Then
+                        ElseIf pingInfo8.HighPing < msWorn Then
                             Lab8_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -740,7 +742,7 @@ Partial Public Class Form1
                         Lab9_stat.ToolTip = "Ping: " & pingInfo9.LowPing & " |--| " & "Time: " & pingInfo9.LowDate
                         If pingInfo9.HighPing > msWorn Then
                             Lab9_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo9.HighPing < msWorn Then
+                        ElseIf pingInfo9.HighPing < msWorn Then
                             Lab9_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -792,7 +794,7 @@ Partial Public Class Form1
                         Lab10_stat.ToolTip = "Ping: " & pingInfo10.LowPing & " |--| " & "Time: " & pingInfo10.LowDate
                         If pingInfo10.HighPing > msWorn Then
                             Lab10_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo10.HighPing < msWorn Then
+                        ElseIf pingInfo10.HighPing < msWorn Then
                             Lab10_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -844,7 +846,7 @@ Partial Public Class Form1
                         Lab11_stat.ToolTip = "Ping: " & pingInfo11.LowPing & " |--| " & "Time: " & pingInfo11.LowDate
                         If pingInfo11.HighPing > msWorn Then
                             Lab11_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo11.HighPing < msWorn Then
+                        ElseIf pingInfo11.HighPing < msWorn Then
                             Lab11_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -896,7 +898,7 @@ Partial Public Class Form1
                         Lab12_stat.ToolTip = "Ping: " & pingInfo12.LowPing & " |--| " & "Time: " & pingInfo12.LowDate
                         If pingInfo12.HighPing > msWorn Then
                             Lab12_stat.ForeColor = Color.Orange
-                        ElseIf PingInfo12.HighPing < msWorn Then
+                        ElseIf pingInfo12.HighPing < msWorn Then
                             Lab12_stat.ForeColor = Color.Green
                         End If
                     Else
@@ -930,9 +932,6 @@ Partial Public Class Form1
                         Stat_PIc12.Image = ImageList1.Images(2)
                     End If
 
-                    If un12 >= RspError Then
-                        Stat_PIc12.Image = ImageList1.Images(5)
-                    End If
 
                     If text = "Not Set" Then
                         IP12_lab.Text = "0.0.0.0"
@@ -950,6 +949,57 @@ Partial Public Class Form1
                     End If
 
             End Select
+
+#Region "Reg Update"
+            If un1 >= RspWorn Then
+                Stat_PIc1.Image = ImageList1.Images(5)
+            End If
+
+            If un2 >= RspWorn Then
+                Stat_PIc2.Image = ImageList1.Images(5)
+            End If
+
+            If un3 >= RspWorn Then
+                Stat_PIc3.Image = ImageList1.Images(5)
+            End If
+
+            If un4 >= RspWorn Then
+                Stat_PIc4.Image = ImageList1.Images(5)
+            End If
+
+            If un5 >= RspWorn Then
+                Stat_PIc5.Image = ImageList1.Images(5)
+            End If
+
+            If un6 >= RspWorn Then
+                Stat_PIc6.Image = ImageList1.Images(5)
+            End If
+
+            If un7 >= RspWorn Then
+                Stat_PIc7.Image = ImageList1.Images(5)
+            End If
+
+            If un8 >= RspWorn Then
+                Stat_PIc8.Image = ImageList1.Images(5)
+            End If
+
+            If un9 >= RspWorn Then
+                Stat_PIc9.Image = ImageList1.Images(5)
+            End If
+
+            If un10 >= RspWorn Then
+                Stat_PIc10.Image = ImageList1.Images(5)
+            End If
+
+            If un11 >= RspWorn Then
+                Stat_PIc11.Image = ImageList1.Images(5)
+            End If
+
+            If un12 >= RspWorn Then
+                Stat_PIc12.Image = ImageList1.Images(5)
+            End If
+#End Region
+
         End If
 
         Try
@@ -1562,7 +1612,7 @@ Partial Public Class Form1
 
 #Region "Change / Clear IP Address And Name"
     Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
-        settings.HidePopup()
+        setup.HidePopup()
     End Sub
 
     Private Sub Change_name_but_Ok_Click(sender As Object, e As EventArgs) Handles Change_name_but_Ok.Click
@@ -1639,7 +1689,7 @@ Partial Public Class Form1
             IpAdName12.Text = Ipname_set12.Text
         End If
 
-        settings.HidePopup()
+        setup.HidePopup()
 
     End Sub
 
@@ -1670,7 +1720,7 @@ Partial Public Class Form1
         Ipname_set12.Text = ""
     End Sub
 
-    Private Sub Settings_BeforePopup(sender As Object, e As CancelEventArgs) Handles settings.BeforePopup
+    Private Sub Settings_BeforePopup(sender As Object, e As CancelEventArgs) Handles setup.BeforePopup
 
         If Ipname_set1.Text = IpAdName1.Text Then
             Ipname_set1.Text = ""
@@ -1930,11 +1980,20 @@ Partial Public Class Form1
 
     End Sub
 
+
+    Private Sub settings_BeforePopup_1(sender As Object, e As CancelEventArgs) Handles settings.BeforePopup
+        bgwPing.CancelAsync()
+    End Sub
+
+    Private Sub settings_CloseUp_1(sender As Object, e As EventArgs) Handles settings.CloseUp
+        bgwPing.RunWorkerAsync()
+    End Sub
+
     Private Sub Clearpopup_CloseUp(sender As Object, e As EventArgs) Handles Clearpopup.CloseUp
         bgwPing.RunWorkerAsync()
     End Sub
 
-    Private Sub Settings_CloseUp(sender As Object, e As EventArgs) Handles settings.CloseUp
+    Private Sub Settings_CloseUp(sender As Object, e As EventArgs) Handles setup.CloseUp
         If Start_but.Enabled = True Then
             bgwPing.RunWorkerAsync()
             Start_but.Enabled = False

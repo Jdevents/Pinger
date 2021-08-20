@@ -128,9 +128,7 @@
         Me.PingfqSelc = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.DropDownButton1 = New DevExpress.XtraEditors.DropDownButton()
-        Me.settings = New DevExpress.XtraBars.PopupControlContainer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.MswornSelc = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.setup = New DevExpress.XtraBars.PopupControlContainer(Me.components)
         Me.error_lbl = New System.Windows.Forms.Label()
         Me.ValiAD12 = New System.Windows.Forms.PictureBox()
         Me.ValiAD11 = New System.Windows.Forms.PictureBox()
@@ -213,6 +211,8 @@
         Me.BarEditItem18 = New DevExpress.XtraBars.BarEditItem()
         Me.BarSubItem1 = New DevExpress.XtraBars.BarSubItem()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MswornSelc = New DevExpress.XtraEditors.ComboBoxEdit()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.Clearpopup = New DevExpress.XtraBars.PopupControlContainer(Me.components)
         Me.SimpleButton3 = New DevExpress.XtraEditors.SimpleButton()
@@ -277,6 +277,13 @@
         Me.Lab12_stat = New DevExpress.XtraEditors.LabelControl()
         Me.clear_ping_info_but = New DevExpress.XtraEditors.SimpleButton()
         Me.RepError = New DevExpress.XtraEditors.ComboBoxEdit()
+        Me.DropDownButton3 = New DevExpress.XtraEditors.DropDownButton()
+        Me.settings = New DevExpress.XtraBars.PopupControlContainer(Me.components)
+        Me.GroupControl1 = New DevExpress.XtraEditors.GroupControl()
+        Me.RspWorn_Other = New DevExpress.XtraEditors.TextEdit()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.SeparatorControl9 = New DevExpress.XtraEditors.SeparatorControl()
+        Me.SeparatorControl10 = New DevExpress.XtraEditors.SeparatorControl()
         CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -308,9 +315,8 @@
         CType(Me.Always_was_Top.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.NotifyMenu.SuspendLayout()
         CType(Me.PingfqSelc.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.settings, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.settings.SuspendLayout()
-        CType(Me.MswornSelc.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.setup, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.setup.SuspendLayout()
         CType(Me.ValiAD12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ValiAD11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ValiAD10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -326,6 +332,7 @@
         CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SeparatorControl7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MswornSelc.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Clearpopup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Clearpopup.SuspendLayout()
         CType(Me.Ip_clear_12.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -361,6 +368,13 @@
         CType(Me.Stat_PIc8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Stat_PIc7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepError.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.settings, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.settings.SuspendLayout()
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupControl1.SuspendLayout()
+        CType(Me.RspWorn_Other.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SeparatorControl9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SeparatorControl10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RepositoryItemTextEdit1
@@ -1137,122 +1151,95 @@
         Me.DropDownButton1.Appearance.Options.UseFont = True
         Me.DropDownButton1.Appearance.Options.UseForeColor = True
         Me.DropDownButton1.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Hide
-        Me.DropDownButton1.DropDownControl = Me.settings
+        Me.DropDownButton1.DropDownControl = Me.setup
         Me.DropDownButton1.ImageOptions.Image = CType(resources.GetObject("DropDownButton1.ImageOptions.Image"), System.Drawing.Image)
         Me.DropDownButton1.Location = New System.Drawing.Point(11, 96)
         Me.DropDownButton1.Name = "DropDownButton1"
         Me.DropDownButton1.Size = New System.Drawing.Size(126, 34)
         Me.DropDownButton1.TabIndex = 0
-        Me.DropDownButton1.Text = "Settings"
+        Me.DropDownButton1.Text = "Setup"
         '
-        'settings
+        'setup
         '
-        Me.settings.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-        Me.settings.Controls.Add(Me.Label1)
-        Me.settings.Controls.Add(Me.MswornSelc)
-        Me.settings.Controls.Add(Me.error_lbl)
-        Me.settings.Controls.Add(Me.ValiAD12)
-        Me.settings.Controls.Add(Me.ValiAD11)
-        Me.settings.Controls.Add(Me.ValiAD10)
-        Me.settings.Controls.Add(Me.ValiAD9)
-        Me.settings.Controls.Add(Me.ValiAD8)
-        Me.settings.Controls.Add(Me.ValiAD7)
-        Me.settings.Controls.Add(Me.ValiAD6)
-        Me.settings.Controls.Add(Me.ValiAD5)
-        Me.settings.Controls.Add(Me.ValiAD4)
-        Me.settings.Controls.Add(Me.ValiAD3)
-        Me.settings.Controls.Add(Me.ValiAD2)
-        Me.settings.Controls.Add(Me.ValiAD1)
-        Me.settings.Controls.Add(Me.IPAd1)
-        Me.settings.Controls.Add(Me.Name_set_lbl7)
-        Me.settings.Controls.Add(Me.Ipname_set7)
-        Me.settings.Controls.Add(Me.Name_set_lbl8)
-        Me.settings.Controls.Add(Me.Name_set_lbl10)
-        Me.settings.Controls.Add(Me.Ipname_set10)
-        Me.settings.Controls.Add(Me.Ipname_set8)
-        Me.settings.Controls.Add(Me.Name_set_lbl11)
-        Me.settings.Controls.Add(Me.Ipname_set11)
-        Me.settings.Controls.Add(Me.Name_set_lbl9)
-        Me.settings.Controls.Add(Me.Name_set_lbl12)
-        Me.settings.Controls.Add(Me.Ipname_set9)
-        Me.settings.Controls.Add(Me.Ipname_set12)
-        Me.settings.Controls.Add(Me.IpAdName7)
-        Me.settings.Controls.Add(Me.IPAd7)
-        Me.settings.Controls.Add(Me.Label7)
-        Me.settings.Controls.Add(Me.IpAdName8)
-        Me.settings.Controls.Add(Me.IpAdName10)
-        Me.settings.Controls.Add(Me.SimpleButton2)
-        Me.settings.Controls.Add(Me.IPAd10)
-        Me.settings.Controls.Add(Me.Change_name_but_Ok)
-        Me.settings.Controls.Add(Me.Label9)
-        Me.settings.Controls.Add(Me.PingfqSelc)
-        Me.settings.Controls.Add(Me.IPAd8)
-        Me.settings.Controls.Add(Me.IpAdName11)
-        Me.settings.Controls.Add(Me.Label10)
-        Me.settings.Controls.Add(Me.Ipname_set6)
-        Me.settings.Controls.Add(Me.IPAd11)
-        Me.settings.Controls.Add(Me.IpAdName9)
-        Me.settings.Controls.Add(Me.Name_set_lbl6)
-        Me.settings.Controls.Add(Me.IpAdName12)
-        Me.settings.Controls.Add(Me.Ipname_set5)
-        Me.settings.Controls.Add(Me.IPAd9)
-        Me.settings.Controls.Add(Me.Start_but)
-        Me.settings.Controls.Add(Me.IPAd12)
-        Me.settings.Controls.Add(Me.Name_set_lbl5)
-        Me.settings.Controls.Add(Me.Edit_but)
-        Me.settings.Controls.Add(Me.Ipname_set4)
-        Me.settings.Controls.Add(Me.Name_set_lbl4)
-        Me.settings.Controls.Add(Me.Ipname_set3)
-        Me.settings.Controls.Add(Me.Name_set_lbl3)
-        Me.settings.Controls.Add(Me.Ipname_set2)
-        Me.settings.Controls.Add(Me.Name_set_lbl2)
-        Me.settings.Controls.Add(Me.Ipname_set1)
-        Me.settings.Controls.Add(Me.Name_set_lbl1)
-        Me.settings.Controls.Add(Me.IpAdName1)
-        Me.settings.Controls.Add(Me.Start_But_Info)
-        Me.settings.Controls.Add(Me.IpAdName2)
-        Me.settings.Controls.Add(Me.IPAd2)
-        Me.settings.Controls.Add(Me.IpAdName3)
-        Me.settings.Controls.Add(Me.IPAd3)
-        Me.settings.Controls.Add(Me.IpAdName4)
-        Me.settings.Controls.Add(Me.IPAd4)
-        Me.settings.Controls.Add(Me.IpAdName5)
-        Me.settings.Controls.Add(Me.IPAd5)
-        Me.settings.Controls.Add(Me.IpAdName6)
-        Me.settings.Controls.Add(Me.IPAd6)
-        Me.settings.Controls.Add(Me.SeparatorControl6)
-        Me.settings.Controls.Add(Me.SeparatorControl7)
-        Me.settings.Location = New System.Drawing.Point(55, 171)
-        Me.settings.Manager = Me.BarManager1
-        Me.settings.Name = "settings"
-        Me.settings.Size = New System.Drawing.Size(1162, 325)
-        Me.settings.TabIndex = 73
-        Me.settings.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.Lime
-        Me.Label1.Location = New System.Drawing.Point(581, 271)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(164, 13)
-        Me.Label1.TabIndex = 98
-        Me.Label1.Text = "Show Worning is Ping ms is over:"
-        '
-        'MswornSelc
-        '
-        Me.MswornSelc.EditValue = "3 MS (Default)"
-        Me.MswornSelc.Enabled = False
-        Me.MswornSelc.Location = New System.Drawing.Point(585, 290)
-        Me.MswornSelc.Name = "MswornSelc"
-        Me.MswornSelc.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
-        Me.MswornSelc.Properties.Appearance.Options.UseForeColor = True
-        Me.MswornSelc.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.MswornSelc.Properties.DropDownRows = 5
-        Me.MswornSelc.Properties.Items.AddRange(New Object() {"3 MS (Default)", "4 MS", "5 MS", "6 MS", "7 MS", "8 MS", "9 MS", "10 MS"})
-        Me.MswornSelc.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
-        Me.MswornSelc.Size = New System.Drawing.Size(101, 20)
-        Me.MswornSelc.TabIndex = 0
+        Me.setup.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.setup.Controls.Add(Me.error_lbl)
+        Me.setup.Controls.Add(Me.ValiAD12)
+        Me.setup.Controls.Add(Me.ValiAD11)
+        Me.setup.Controls.Add(Me.ValiAD10)
+        Me.setup.Controls.Add(Me.ValiAD9)
+        Me.setup.Controls.Add(Me.ValiAD8)
+        Me.setup.Controls.Add(Me.ValiAD7)
+        Me.setup.Controls.Add(Me.ValiAD6)
+        Me.setup.Controls.Add(Me.ValiAD5)
+        Me.setup.Controls.Add(Me.ValiAD4)
+        Me.setup.Controls.Add(Me.ValiAD3)
+        Me.setup.Controls.Add(Me.ValiAD2)
+        Me.setup.Controls.Add(Me.ValiAD1)
+        Me.setup.Controls.Add(Me.IPAd1)
+        Me.setup.Controls.Add(Me.Name_set_lbl7)
+        Me.setup.Controls.Add(Me.Ipname_set7)
+        Me.setup.Controls.Add(Me.Name_set_lbl8)
+        Me.setup.Controls.Add(Me.Name_set_lbl10)
+        Me.setup.Controls.Add(Me.Ipname_set10)
+        Me.setup.Controls.Add(Me.Ipname_set8)
+        Me.setup.Controls.Add(Me.Name_set_lbl11)
+        Me.setup.Controls.Add(Me.Ipname_set11)
+        Me.setup.Controls.Add(Me.Name_set_lbl9)
+        Me.setup.Controls.Add(Me.Name_set_lbl12)
+        Me.setup.Controls.Add(Me.Ipname_set9)
+        Me.setup.Controls.Add(Me.Ipname_set12)
+        Me.setup.Controls.Add(Me.IpAdName7)
+        Me.setup.Controls.Add(Me.IPAd7)
+        Me.setup.Controls.Add(Me.Label7)
+        Me.setup.Controls.Add(Me.IpAdName8)
+        Me.setup.Controls.Add(Me.IpAdName10)
+        Me.setup.Controls.Add(Me.SimpleButton2)
+        Me.setup.Controls.Add(Me.IPAd10)
+        Me.setup.Controls.Add(Me.Change_name_but_Ok)
+        Me.setup.Controls.Add(Me.Label9)
+        Me.setup.Controls.Add(Me.PingfqSelc)
+        Me.setup.Controls.Add(Me.IPAd8)
+        Me.setup.Controls.Add(Me.IpAdName11)
+        Me.setup.Controls.Add(Me.Label10)
+        Me.setup.Controls.Add(Me.Ipname_set6)
+        Me.setup.Controls.Add(Me.IPAd11)
+        Me.setup.Controls.Add(Me.IpAdName9)
+        Me.setup.Controls.Add(Me.Name_set_lbl6)
+        Me.setup.Controls.Add(Me.IpAdName12)
+        Me.setup.Controls.Add(Me.Ipname_set5)
+        Me.setup.Controls.Add(Me.IPAd9)
+        Me.setup.Controls.Add(Me.Start_but)
+        Me.setup.Controls.Add(Me.IPAd12)
+        Me.setup.Controls.Add(Me.Name_set_lbl5)
+        Me.setup.Controls.Add(Me.Edit_but)
+        Me.setup.Controls.Add(Me.Ipname_set4)
+        Me.setup.Controls.Add(Me.Name_set_lbl4)
+        Me.setup.Controls.Add(Me.Ipname_set3)
+        Me.setup.Controls.Add(Me.Name_set_lbl3)
+        Me.setup.Controls.Add(Me.Ipname_set2)
+        Me.setup.Controls.Add(Me.Name_set_lbl2)
+        Me.setup.Controls.Add(Me.Ipname_set1)
+        Me.setup.Controls.Add(Me.Name_set_lbl1)
+        Me.setup.Controls.Add(Me.IpAdName1)
+        Me.setup.Controls.Add(Me.Start_But_Info)
+        Me.setup.Controls.Add(Me.IpAdName2)
+        Me.setup.Controls.Add(Me.IPAd2)
+        Me.setup.Controls.Add(Me.IpAdName3)
+        Me.setup.Controls.Add(Me.IPAd3)
+        Me.setup.Controls.Add(Me.IpAdName4)
+        Me.setup.Controls.Add(Me.IPAd4)
+        Me.setup.Controls.Add(Me.IpAdName5)
+        Me.setup.Controls.Add(Me.IPAd5)
+        Me.setup.Controls.Add(Me.IpAdName6)
+        Me.setup.Controls.Add(Me.IPAd6)
+        Me.setup.Controls.Add(Me.SeparatorControl6)
+        Me.setup.Controls.Add(Me.SeparatorControl7)
+        Me.setup.Location = New System.Drawing.Point(1216, 204)
+        Me.setup.Manager = Me.BarManager1
+        Me.setup.Name = "setup"
+        Me.setup.Size = New System.Drawing.Size(1162, 325)
+        Me.setup.TabIndex = 73
+        Me.setup.Visible = False
         '
         'error_lbl
         '
@@ -1838,7 +1825,7 @@
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 139)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 655)
         Me.barDockControlBottom.Manager = Me.BarManager1
         Me.barDockControlBottom.Size = New System.Drawing.Size(1376, 0)
         '
@@ -1848,7 +1835,7 @@
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Manager = Me.BarManager1
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 139)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 655)
         '
         'barDockControlRight
         '
@@ -1856,7 +1843,7 @@
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.Location = New System.Drawing.Point(1376, 0)
         Me.barDockControlRight.Manager = Me.BarManager1
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 139)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 655)
         '
         'BarEditItem1
         '
@@ -2077,6 +2064,30 @@
         Me.BarButtonItem1.Name = "BarButtonItem1"
         Me.BarButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Lime
+        Me.Label1.Location = New System.Drawing.Point(29, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(163, 13)
+        Me.Label1.TabIndex = 98
+        Me.Label1.Text = "Show Worning if Ping ms is over:"
+        '
+        'MswornSelc
+        '
+        Me.MswornSelc.EditValue = "3 MS (Default)"
+        Me.MswornSelc.Location = New System.Drawing.Point(58, 44)
+        Me.MswornSelc.Name = "MswornSelc"
+        Me.MswornSelc.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.MswornSelc.Properties.Appearance.Options.UseForeColor = True
+        Me.MswornSelc.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.MswornSelc.Properties.DropDownRows = 5
+        Me.MswornSelc.Properties.Items.AddRange(New Object() {"3 MS (Default)", "4 MS", "5 MS", "6 MS", "7 MS", "8 MS", "9 MS", "10 MS"})
+        Me.MswornSelc.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
+        Me.MswornSelc.Size = New System.Drawing.Size(101, 20)
+        Me.MswornSelc.TabIndex = 0
+        '
         'SimpleButton1
         '
         Me.SimpleButton1.Appearance.ForeColor = System.Drawing.Color.Lime
@@ -2120,7 +2131,7 @@
         Me.Clearpopup.Controls.Add(Me.Name_clear_1)
         Me.Clearpopup.Controls.Add(Me.SeparatorControl5)
         Me.Clearpopup.Controls.Add(Me.SimpleButton1)
-        Me.Clearpopup.Location = New System.Drawing.Point(889, 580)
+        Me.Clearpopup.Location = New System.Drawing.Point(1216, 590)
         Me.Clearpopup.Manager = Me.BarManager1
         Me.Clearpopup.Name = "Clearpopup"
         Me.Clearpopup.Size = New System.Drawing.Size(701, 286)
@@ -2490,7 +2501,7 @@
         Me.DropDownButton2.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Hide
         Me.DropDownButton2.DropDownControl = Me.Clearpopup
         Me.DropDownButton2.ImageOptions.Image = CType(resources.GetObject("DropDownButton2.ImageOptions.Image"), System.Drawing.Image)
-        Me.DropDownButton2.Location = New System.Drawing.Point(143, 96)
+        Me.DropDownButton2.Location = New System.Drawing.Point(270, 96)
         Me.DropDownButton2.Name = "DropDownButton2"
         Me.DropDownButton2.Size = New System.Drawing.Size(126, 34)
         Me.DropDownButton2.TabIndex = 148
@@ -2831,7 +2842,7 @@
         Me.clear_ping_info_but.Appearance.Options.UseFont = True
         Me.clear_ping_info_but.Appearance.Options.UseForeColor = True
         Me.clear_ping_info_but.ImageOptions.Image = CType(resources.GetObject("clear_ping_info_but.ImageOptions.Image"), System.Drawing.Image)
-        Me.clear_ping_info_but.Location = New System.Drawing.Point(272, 96)
+        Me.clear_ping_info_but.Location = New System.Drawing.Point(402, 96)
         Me.clear_ping_info_but.Name = "clear_ping_info_but"
         Me.clear_ping_info_but.Size = New System.Drawing.Size(142, 34)
         Me.clear_ping_info_but.TabIndex = 154
@@ -2839,29 +2850,105 @@
         '
         'RepError
         '
-        Me.RepError.EditValue = "3 MS (Default)"
-        Me.RepError.Enabled = False
-        Me.RepError.Location = New System.Drawing.Point(804, 115)
+        Me.RepError.EditValue = "3 (Default)"
+        Me.RepError.Location = New System.Drawing.Point(58, 98)
         Me.RepError.Name = "RepError"
         Me.RepError.Properties.Appearance.ForeColor = System.Drawing.Color.Lime
         Me.RepError.Properties.Appearance.Options.UseForeColor = True
         Me.RepError.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepError.Properties.DropDownRows = 5
-        Me.RepError.Properties.Items.AddRange(New Object() {"3 MS (Default)", "4 MS", "5 MS", "6 MS", "7 MS", "8 MS", "9 MS", "10 MS"})
+        Me.RepError.Properties.Items.AddRange(New Object() {"3 (Default)", "4", "5", "6", "7", "8", "9", "10", "Other"})
         Me.RepError.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
         Me.RepError.Size = New System.Drawing.Size(101, 20)
         Me.RepError.TabIndex = 159
+        '
+        'DropDownButton3
+        '
+        Me.DropDownButton3.Appearance.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.DropDownButton3.Appearance.ForeColor = System.Drawing.Color.Lime
+        Me.DropDownButton3.Appearance.Options.UseFont = True
+        Me.DropDownButton3.Appearance.Options.UseForeColor = True
+        Me.DropDownButton3.DropDownArrowStyle = DevExpress.XtraEditors.DropDownArrowStyle.Hide
+        Me.DropDownButton3.DropDownControl = Me.settings
+        Me.DropDownButton3.ImageOptions.SvgImage = CType(resources.GetObject("DropDownButton3.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.DropDownButton3.Location = New System.Drawing.Point(143, 96)
+        Me.DropDownButton3.Name = "DropDownButton3"
+        Me.DropDownButton3.Size = New System.Drawing.Size(121, 34)
+        Me.DropDownButton3.TabIndex = 164
+        Me.DropDownButton3.Text = "Settings"
+        '
+        'settings
+        '
+        Me.settings.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.settings.Controls.Add(Me.GroupControl1)
+        Me.settings.Location = New System.Drawing.Point(37, 166)
+        Me.settings.Manager = Me.BarManager1
+        Me.settings.Name = "settings"
+        Me.settings.Size = New System.Drawing.Size(786, 322)
+        Me.settings.TabIndex = 165
+        Me.settings.Visible = False
+        '
+        'GroupControl1
+        '
+        Me.GroupControl1.Controls.Add(Me.RspWorn_Other)
+        Me.GroupControl1.Controls.Add(Me.Label4)
+        Me.GroupControl1.Controls.Add(Me.Label1)
+        Me.GroupControl1.Controls.Add(Me.MswornSelc)
+        Me.GroupControl1.Controls.Add(Me.SeparatorControl9)
+        Me.GroupControl1.Controls.Add(Me.RepError)
+        Me.GroupControl1.Controls.Add(Me.SeparatorControl10)
+        Me.GroupControl1.Location = New System.Drawing.Point(13, 12)
+        Me.GroupControl1.Name = "GroupControl1"
+        Me.GroupControl1.Size = New System.Drawing.Size(220, 150)
+        Me.GroupControl1.TabIndex = 160
+        Me.GroupControl1.Text = "Worning  Settings"
+        '
+        'RspWorn_Other
+        '
+        Me.RspWorn_Other.Location = New System.Drawing.Point(58, 124)
+        Me.RspWorn_Other.MenuManager = Me.BarManager1
+        Me.RspWorn_Other.Name = "RspWorn_Other"
+        Me.RspWorn_Other.Properties.NullValuePrompt = "Other"
+        Me.RspWorn_Other.Size = New System.Drawing.Size(100, 20)
+        Me.RspWorn_Other.TabIndex = 163
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.Lime
+        Me.Label4.Location = New System.Drawing.Point(39, 75)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(141, 13)
+        Me.Label4.TabIndex = 162
+        Me.Label4.Text = "Unresponsive Count Setting"
+        '
+        'SeparatorControl9
+        '
+        Me.SeparatorControl9.LineColor = System.Drawing.Color.Lime
+        Me.SeparatorControl9.Location = New System.Drawing.Point(5, 69)
+        Me.SeparatorControl9.Name = "SeparatorControl9"
+        Me.SeparatorControl9.Size = New System.Drawing.Size(210, 23)
+        Me.SeparatorControl9.TabIndex = 160
+        '
+        'SeparatorControl10
+        '
+        Me.SeparatorControl10.LineColor = System.Drawing.Color.Lime
+        Me.SeparatorControl10.Location = New System.Drawing.Point(5, 25)
+        Me.SeparatorControl10.Name = "SeparatorControl10"
+        Me.SeparatorControl10.Size = New System.Drawing.Size(210, 23)
+        Me.SeparatorControl10.TabIndex = 161
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 139)
-        Me.Controls.Add(Me.RepError)
+        Me.ClientSize = New System.Drawing.Size(1376, 655)
+        Me.Controls.Add(Me.settings)
+        Me.Controls.Add(Me.DropDownButton3)
         Me.Controls.Add(Me.clear_ping_info_but)
         Me.Controls.Add(Me.DropDownButton2)
         Me.Controls.Add(Me.Clearpopup)
-        Me.Controls.Add(Me.settings)
+        Me.Controls.Add(Me.setup)
         Me.Controls.Add(Me.Lab12_stat)
         Me.Controls.Add(Me.Lab11_stat)
         Me.Controls.Add(Me.Lab10_stat)
@@ -2948,10 +3035,9 @@
         CType(Me.Always_was_Top.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.NotifyMenu.ResumeLayout(False)
         CType(Me.PingfqSelc.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.settings, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.settings.ResumeLayout(False)
-        Me.settings.PerformLayout()
-        CType(Me.MswornSelc.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.setup, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.setup.ResumeLayout(False)
+        Me.setup.PerformLayout()
         CType(Me.ValiAD12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ValiAD11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ValiAD10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2967,6 +3053,7 @@
         CType(Me.SeparatorControl6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SeparatorControl7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MswornSelc.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Clearpopup, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Clearpopup.ResumeLayout(False)
         Me.Clearpopup.PerformLayout()
@@ -3003,6 +3090,14 @@
         CType(Me.Stat_PIc8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Stat_PIc7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepError.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.settings, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.settings.ResumeLayout(False)
+        CType(Me.GroupControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupControl1.ResumeLayout(False)
+        Me.GroupControl1.PerformLayout()
+        CType(Me.RspWorn_Other.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SeparatorControl9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SeparatorControl10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3067,7 +3162,7 @@
     Friend WithEvents PingfqSelc As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents Label9 As Label
     Friend WithEvents DropDownButton1 As DevExpress.XtraEditors.DropDownButton
-    Friend WithEvents settings As DevExpress.XtraBars.PopupControlContainer
+    Friend WithEvents setup As DevExpress.XtraBars.PopupControlContainer
     Friend WithEvents Change_name_but_Ok As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents Label10 As Label
     Friend WithEvents Ipname_set6 As TextBox
@@ -3259,6 +3354,13 @@
     Friend WithEvents SimpleButton3 As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents clear_ping_info_but As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents RepError As DevExpress.XtraEditors.ComboBoxEdit
+    Friend WithEvents settings As DevExpress.XtraBars.PopupControlContainer
+    Friend WithEvents DropDownButton3 As DevExpress.XtraEditors.DropDownButton
+    Friend WithEvents GroupControl1 As DevExpress.XtraEditors.GroupControl
+    Friend WithEvents Label4 As Label
+    Friend WithEvents SeparatorControl9 As DevExpress.XtraEditors.SeparatorControl
+    Friend WithEvents SeparatorControl10 As DevExpress.XtraEditors.SeparatorControl
+    Friend WithEvents RspWorn_Other As DevExpress.XtraEditors.TextEdit
 
 #End Region
 
